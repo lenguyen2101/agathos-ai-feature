@@ -207,7 +207,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                   value={answers[question.id] || ""}
                   onChange={(e) => {
                     let val = e.target.value;
-                    if (question.id === 'project-goal') {
+                    if (question.id === 'fundraising-goal' || question.id === 'project-goal') {
                       val = val.replace(/\D/g, "");
                       val = val.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                     }
