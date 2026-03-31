@@ -20,12 +20,18 @@ export const knowledgeTopics: KnowledgeTopic[] = [
   },
   {
     id: "project-verification",
-    title: "Project Verification",
-    description: "How we ensure every project on Agathos is legitimate.",
+    title: "Organization & Verification",
+    description: "Official guide to creating and verifying your organization.",
     content: [
-      "Every project undergoes a thorough verification process by the Agathos team.",
-      "This includes interviews with project owners, vetting of supporting documentation, and detailed plans for fund usage.",
-      "Agathos is NOT a charity and does not hold any funds on behalf of project owners; funds are channeled directly to them."
+      "Process to Create an Organization Page:",
+      "1. Log in to Agathos and click your user profile (top-right).",
+      "2. Select 'Manage Pages' from the dropdown menu.",
+      "3. Click '+ Create Organization' in the bottom-left panel.",
+      "4. Provide Details: Country of incorporation, charity status, and operating countries.",
+      "5. Upload Documents: Registration Cert, Financial Statements (if app.), and Bank Statement.",
+      "6. Risk Declaration: Disclose any sanctions or Politically Exposed Persons (PEPs).",
+      "7. Submit: Review takes up to 5 business days. Status updates appear under 'Manage Pages' or via the notification bell.",
+      "Statuses: 'Submission Received', 'Revisions Required' (needs edits), or 'Draft' (not yet submitted)."
     ],
     icon: "🛡️"
   },
@@ -48,6 +54,7 @@ export const knowledgeTopics: KnowledgeTopic[] = [
       "International: Credit/Debit cards (MasterCard/Visa) and Cryptocurrency.",
       "Singapore: PayNow and Secure Funds Transfer service.",
       "Agathos does not charge platform fees for donations. However, payment service providers apply a small fee (0.8% - 3.9%).",
+      "Love Gift Model: Agathos operates on a 10% 'Love Gift' basis for successful projects to sustain the platform.",
       "Cryptocurrency is supported through TripleA, a MAS-licensed provider."
     ],
     icon: "💰"
@@ -66,13 +73,15 @@ export const knowledgeTopics: KnowledgeTopic[] = [
   },
   {
     id: "attendance-tracking",
-    title: "Attendee & Growth",
-    description: "How to track success and manage your event database.",
+    title: "Managing Roles",
+    description: "How to manage users and ownership of your organization.",
     content: [
-      "QR code scanning is available under 'Manage Event' for ticket check-ins.",
-      "Custom CSV exports allow organizers to manage attendance lists manually.",
-      "Organizers can notify ticket holders automatically if event details (date, time, venue) are updated.",
-      "All ticket holders must have an account on Agathos for security and tracking purposes."
+      "Organization Roles:",
+      "- Owner: Full management of organization and all projects/events (1 per Org).",
+      "- Admin: Manages specific project/event pages (1 per Project/Event).",
+      "- Event Check-in: Assist with scanning tickets and registration (Multiple per event).",
+      "Action: To add users, go to 'Team & Roles' and click '+ Add User'.",
+      "Ownership Transfer: Owners can transfer their role to another user via the '3-dot menu'. This is irreversible; the previous owner becomes an Admin."
     ],
     icon: "📑"
   }
