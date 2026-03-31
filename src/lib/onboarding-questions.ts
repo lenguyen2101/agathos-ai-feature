@@ -15,8 +15,14 @@ export interface Question {
   required?: boolean;
 }
 
+const COUNTRY_LIST = ["Singapore", "Malaysia", "Indonesia", "Thailand", "Philippines", "Vietnam", "Cambodia", "Myanmar", "Laos", "India", "Sri Lanka", "Bangladesh", "Nepal", "Hong Kong", "Taiwan", "Japan", "South Korea", "Australia", "New Zealand", "United Kingdom", "United States", "Canada", "Others"];
+
+const CAUSE_LIST = ["Healthcare", "Education", "Poverty Alleviation", "Arts & Culture", "Animal Welfare", "Environment", "Religious", "Disabilities", "Elderly", "Youth"];
+
 export const onboardingQuestions: Question[] = [
-  // SECTION 1: MASTER BRANCH
+  // ═══════════════════════════════════════════
+  // SECTION 1: TRIAGE (1 question)
+  // ═══════════════════════════════════════════
   {
     id: "onboarding-type",
     question: "How are you starting your project today?",
@@ -26,7 +32,11 @@ export const onboardingQuestions: Question[] = [
     required: true
   },
 
-  // SECTION 2A: ORGANISATION BRANCH
+  // ═══════════════════════════════════════════
+  // SECTION 2A: ORGANISATION BRANCH (20 questions)
+  // ═══════════════════════════════════════════
+
+  // --- Organisation Profile ---
   {
     id: "org-name",
     question: "What is the official name of your Organisation?",
@@ -40,7 +50,7 @@ export const onboardingQuestions: Question[] = [
     id: "org-country",
     question: "Country of Incorporation",
     type: "dropdown",
-    options: ["Singapore", "Malaysia", "Indonesia", "Thailand", "Philippines", "Others"],
+    options: COUNTRY_LIST,
     section: "Organisation Profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
@@ -66,7 +76,7 @@ export const onboardingQuestions: Question[] = [
     id: "org-categories",
     question: "Main Causes Supported (Select up to 3)",
     type: "multi-select",
-    options: ["Healthcare", "Education", "Poverty Alleviation", "Arts & Culture", "Animal Welfare", "Environment", "Religious", "Disabilities", "Elderly", "Youth"],
+    options: CAUSE_LIST,
     section: "Organisation Profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
@@ -74,7 +84,7 @@ export const onboardingQuestions: Question[] = [
     id: "org-operation-countries",
     question: "Countries of Operation",
     type: "multi-select",
-    options: ["Singapore", "Malaysia", "Indonesia", "Thailand", "Philippines", "Others"],
+    options: COUNTRY_LIST,
     section: "Organisation Profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
@@ -93,6 +103,41 @@ export const onboardingQuestions: Question[] = [
     section: "Organisation Profile",
     dependsOn: { questionId: "org-country", value: "Singapore" }
   },
+  // NEW: 4 additional org profile fields
+  {
+    id: "org-cause-description",
+    question: "Tell us in more detail about the cause your organisation supports (max 500 words)",
+    type: "textarea",
+    placeholder: "Describe your organisation's mission, impact, and the communities you serve...",
+    section: "Organisation Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
+  },
+  {
+    id: "org-other-platforms",
+    question: "Has your organisation registered with other giving platforms? If so, please list them.",
+    type: "text",
+    placeholder: "e.g. Give.asia, GlobalGiving, GoFundMe",
+    section: "Organisation Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
+  },
+  {
+    id: "org-website-social",
+    question: "Organisation website and social media links",
+    type: "textarea",
+    placeholder: "Website URL, Facebook, Instagram, LinkedIn, etc. (one per line)",
+    section: "Organisation Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
+  },
+  {
+    id: "org-referral",
+    question: "How did you come to know about Agathos?",
+    type: "dropdown",
+    options: ["Social Media", "Word of Mouth", "Conference/Events", "Others"],
+    section: "Organisation Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
+  },
+
+  // --- Compliance Documents ---
   {
     id: "org-uen",
     question: "Company Registration Number (e.g., UEN in Singapore)",
@@ -118,6 +163,17 @@ export const onboardingQuestions: Question[] = [
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
+  // NEW: Org bank statement upload
+  {
+    id: "org-bank-statement-upload",
+    question: "Upload a Bank Statement showing the name of the account (PDF)",
+    type: "upload",
+    section: "Compliance Documents",
+    dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
+    required: true
+  },
+
+  // --- Risk Declaration ---
   {
     id: "sanctions-check",
     question: "Any sanctions or adverse media on company, owners, or directors?",
@@ -125,6 +181,16 @@ export const onboardingQuestions: Question[] = [
     section: "Risk Declaration",
     redFlagValue: "Yes",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
+    required: true
+  },
+  // NEW: Sanctions detail (conditional)
+  {
+    id: "sanctions-details",
+    question: "Please provide brief details about the sanctions or adverse media",
+    type: "textarea",
+    placeholder: "Explain the nature and status of any sanctions or adverse media...",
+    section: "Risk Declaration",
+    dependsOn: { questionId: "sanctions-check", value: "Yes" },
     required: true
   },
   {
@@ -137,7 +203,9 @@ export const onboardingQuestions: Question[] = [
     required: true
   },
 
-  // SECTION 2B: INDIVIDUAL BRANCH
+  // ═══════════════════════════════════════════
+  // SECTION 2B: INDIVIDUAL BRANCH (8 questions)
+  // ═══════════════════════════════════════════
   {
     id: "user-name",
     question: "Full Name (Legal)",
@@ -166,7 +234,7 @@ export const onboardingQuestions: Question[] = [
     id: "individual-causes",
     question: "Which causes are you passionate about? (Max 3)",
     type: "multi-select",
-    options: ["Healthcare", "Education", "Social Services", "Arts", "Environment", "Overseas Missions", "Local Community"],
+    options: CAUSE_LIST,
     section: "Personal Profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
@@ -178,22 +246,66 @@ export const onboardingQuestions: Question[] = [
     section: "Personal Profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
+  // NEW: 3 individual profile fields
+  {
+    id: "individual-country",
+    question: "Country of Residence",
+    type: "dropdown",
+    options: COUNTRY_LIST,
+    section: "Personal Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+  },
+  {
+    id: "individual-website-social",
+    question: "Your website and social media links",
+    type: "textarea",
+    placeholder: "Website URL, Facebook, Instagram, etc. (one per line)",
+    section: "Personal Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+  },
+  {
+    id: "individual-referral",
+    question: "How did you come to know about Agathos?",
+    type: "dropdown",
+    options: ["Social Media", "Word of Mouth", "Conference/Events", "Others"],
+    section: "Personal Profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+  },
+
+  // ═══════════════════════════════════════════
+  // SECTION 3: PROJECT DETAILS — BOTH PATHS (9 questions, NO dependsOn)
+  // ═══════════════════════════════════════════
   {
     id: "project-title",
     question: "Project Title",
     type: "text",
     placeholder: "Give your initiative a name",
     section: "Project Details",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
+    required: true
+  },
+  // NEW: Project Cause
+  {
+    id: "project-cause",
+    question: "Project Cause",
+    type: "dropdown",
+    options: CAUSE_LIST,
+    section: "Project Details",
     required: true
   },
   {
     id: "project-location",
     question: "Project Location (City, Country)",
     type: "text",
-    placeholder: "Where will this take place?",
-    section: "Project Details",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+    placeholder: "City, Country (e.g. Phnom Penh, Cambodia)",
+    section: "Project Details"
+  },
+  // NEW: Project Duration
+  {
+    id: "project-duration",
+    question: "Project Duration",
+    type: "text",
+    placeholder: "e.g. Jan 2026 - Dec 2026 (start and end date)",
+    section: "Project Details"
   },
   {
     id: "project-problem",
@@ -201,27 +313,41 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "Start with a compelling hook and describe the challenge...",
     section: "Project Details",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
     required: true
+  },
+  // NEW: Project Background
+  {
+    id: "project-background",
+    question: "Additional background and context for your project",
+    type: "textarea",
+    placeholder: "Provide details about the issue or challenge. Share relevant stats, research, or testimonials to support the need. Describe any previous efforts and their outcomes.",
+    section: "Project Details"
   },
   {
     id: "project-activities",
     question: "What specific actions/activities will be undertaken?",
     type: "textarea",
     placeholder: "Outline your action plan and target beneficiaries...",
-    section: "Project Details",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+    section: "Project Details"
   },
   {
     id: "cause-evidence-upload",
     question: "Upload Evidence of Cause / Approval Letter",
     type: "upload",
     section: "Project Details",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
     required: true
   },
+  // NEW: Project Photos
+  {
+    id: "project-photos",
+    question: "Upload photos for your project page (used in carousel)",
+    type: "upload",
+    section: "Project Details"
+  },
 
-  // SHARED FINANCIAL SECTION
+  // ═══════════════════════════════════════════
+  // SECTION 4: FINANCIALS — BOTH PATHS (9 questions)
+  // ═══════════════════════════════════════════
   {
     id: "fundraising-goal",
     question: "What is your fundraising goal (in SGD)?",
@@ -235,6 +361,15 @@ export const onboardingQuestions: Question[] = [
     question: "Detailed breakdown of fund usage",
     type: "textarea",
     placeholder: "How will the money be spent? Please ensure transparency.",
+    section: "Financials",
+    required: true
+  },
+  // NEW: Excess/Shortfall plan
+  {
+    id: "fund-excess-shortfall",
+    question: "Plan for excess or shortfall in fundraising",
+    type: "textarea",
+    placeholder: "Where will excess funds be channelled? If the goal isn't met, how will raised funds be used?",
     section: "Financials",
     required: true
   },
@@ -260,6 +395,23 @@ export const onboardingQuestions: Question[] = [
     section: "Financials",
     required: true
   },
+  // NEW: SWIFT code
+  {
+    id: "bank-swift",
+    question: "SWIFT / BIC Code",
+    type: "text",
+    placeholder: "e.g. DBSSSGSG",
+    section: "Financials",
+    required: true
+  },
+  // NEW: Bank Address
+  {
+    id: "bank-address",
+    question: "Bank Address",
+    type: "text",
+    placeholder: "Full address of the bank branch",
+    section: "Financials"
+  },
   {
     id: "bank-statement-upload",
     question: "Upload Bank Statement (Proof of Ownership)",
@@ -268,7 +420,9 @@ export const onboardingQuestions: Question[] = [
     required: true
   },
 
-  // FINAL BRANCH
+  // ═══════════════════════════════════════════
+  // SECTION 5: FINAL REVIEW — BOTH PATHS (4 questions)
+  // ═══════════════════════════════════════════
   {
     id: "love-gift-model",
     question: "Platform Support: At Agathos, we operate on a Love Gift model (typically 10% for success). Do you agree?",
