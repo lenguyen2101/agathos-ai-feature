@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="Trang-1" id="SpiJR2w3m42EfFhCjszQ">
+    <mxGraphModel dx="10708" dy="6296" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="646" width="1050" x="-1740" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="3" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=47;" value="Start a project" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" connectable="0" parent="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Org" vertex="1">
+          <mxGeometry relative="1" x="-0.6089" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" connectable="0" parent="7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Indiv" vertex="1">
+          <mxGeometry relative="1" x="-0.1471" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Individual or Organisation?" vertex="1">
+          <mxGeometry height="60" width="210" x="335" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" value="Copy: Welcome to Agathos!&lt;div&gt;Please help us to answer some questions about your project so that we can assist you better.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Are you starting a project as an:&lt;/div&gt;&lt;div&gt;&amp;lt;Individual&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;lt;Organisation&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="90" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" value="Location:&lt;div&gt;Banner &#39;Start a Project&#39; &amp;gt; Info Page w CTA&lt;/div&gt;&lt;div&gt;+ dashboard&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="380" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Login or Sign Up to continue" vertex="1">
+          <mxGeometry height="60" width="150" x="365" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" value="Copy:&lt;div&gt;Create your very own org page&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Please have the following documents ready...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="980" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" connectable="0" parent="15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Select" vertex="1">
+          <mxGeometry relative="1" x="-0.1912" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" connectable="0" parent="17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Create" vertex="1">
+          <mxGeometry relative="1" x="-0.072" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Select or Create Org" vertex="1">
+          <mxGeometry height="80" width="137" x="731.5" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Display list of orgs:&lt;div&gt;- that user is admin/owner of&lt;/div&gt;&lt;div&gt;- that allow advocacy (future)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="160" x="720" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create Org Welcome Page" vertex="1">
+          <mxGeometry height="60" width="120" x="980" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Collect org details" vertex="1">
+          <mxGeometry height="60" width="120" x="1170" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Org details" vertex="1">
+          <mxGeometry height="60" width="120" x="1440" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;whiteSpace=wrap;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-58f5495f-7fff-00cc-71dd-69db42167875&quot;&gt;&lt;ul&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Organisation Name [open-ended]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Country of Incorporation [drop down]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Is your organisation a registered charity/non-profit in this country? [yes/no drop down]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre;&quot;&gt;What is the nature of your organisation&#39;s work? [open-ended, more characters]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Size of organisation [drop down]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;- &amp;lt;5&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;- 5-10&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;- 10-25&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;- 25-50&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;- &amp;gt;50&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Main categories/causes [select up to 3]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Countries of operation [Dropdown, multiple selection]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 12pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Can you offer tax deductions to donors? (only for Singapore organisations) [yes/no]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre; line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;/p&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="340" width="521" x="1240" y="-490" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Documents" vertex="1">
+          <mxGeometry height="60" width="120" x="1820" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-58f5495f-7fff-00cc-71dd-69db42167875&quot;&gt;&lt;ul&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;Compny registration number (eg. UEN in Singapore)&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Helvetica;&quot;&gt;Please upload the registration certificate of your organisation in English (accepted file types: PDF, (please suggest more))&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap;&quot;&gt;Please upload the latest Financial Statements or Annual Report of your organisation &lt;/span&gt;&lt;span style=&quot;font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;(accepted file types: PDF, (please suggest more))&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap;&quot;&gt;Please upload a Bank Statement showing the name of the account &lt;/span&gt;&lt;span style=&quot;font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;(accepted file types: PDF, (please suggest more))&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre; line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;/p&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="280" width="300" x="1730" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="96">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2361.0000000000005" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Risk declaration" vertex="1">
+          <mxGeometry height="60" width="120" x="2120" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-d79d77c8-7fff-2a9f-f363-ad3f1be9608d&quot;&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; padding-inline-start: 48px;&quot;&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Any sanctions or adverse media on company, shareholders, owners, or directors? [yes/no]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;If yes, please provide brief details [to build in an alert to admin eg. highlight field in red]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Any Politically Exposed Persons (PEPs) involved? [yes/no]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="320" width="210" x="2075" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2421.0000000000005" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="Copy: By submitting this information, I confirm that it is true and accurate to the best of my knowledge, and that I am a valid representative of the organisation. I also agree to Agathos&#39; Terms and Conditions." vertex="1">
+          <mxGeometry height="160" width="210" x="2316" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;div&gt;Review:&lt;/div&gt;Agathos Admin to approve" vertex="1">
+          <mxGeometry height="70" width="180" x="2330.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2619.5" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" connectable="0" parent="39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Reject" vertex="1">
+          <mxGeometry relative="1" x="-0.4209" y="-3" as="geometry">
+            <mxPoint x="11" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" connectable="0" parent="41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Revise" vertex="1">
+          <mxGeometry relative="1" x="0.0654" y="-2" as="geometry">
+            <mxPoint x="7" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" connectable="0" parent="43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Approve" vertex="1">
+          <mxGeometry relative="1" x="-0.1083" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Approve or&amp;nbsp;&lt;div&gt;Reject or&amp;nbsp;&lt;/div&gt;&lt;div&gt;Revise&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="2320.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;" value="Reasons for rejecting:&lt;div&gt;- time out/closure of application&lt;/div&gt;&lt;div&gt;- Unable to provide documents after clarification&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="150" x="2789.5" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Reject Notification sent to user" vertex="1">
+          <mxGeometry height="60" width="120" x="2619.5" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="48" edge="1" parent="1" source="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Request more info or docs" vertex="1">
+          <mxGeometry height="60" width="120" x="2120" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;" value="- Enable freeform input from admin" vertex="1">
+          <mxGeometry height="100" width="115" x="1960" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="51" edge="1" parent="1" source="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Approve Notification sent to user" vertex="1">
+          <mxGeometry height="60" width="120" x="2360.5" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="53" edge="1" parent="1" source="54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User submission" vertex="1">
+          <mxGeometry height="60" width="120" x="2120" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;" value="&lt;br&gt;&lt;div&gt;- Allow doc upload&lt;/div&gt;&lt;div&gt;- Allow free form answer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="115" x="1953" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User given org page (but not live yet)" vertex="1">
+          <mxGeometry height="60" width="120" x="2360.5" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;" value="- Pre-filled" vertex="1">
+          <mxGeometry height="100" width="115" x="2526" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="58" edge="1" parent="1" source="59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Project Overview" vertex="1">
+          <mxGeometry height="60" width="130" x="735" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="60" edge="1" parent="1" source="61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Project details (determine legitimacy)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;jumpStyle=arc;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="628.4615384615385" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="63" connectable="0" parent="62" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Create a Project" vertex="1">
+          <mxGeometry relative="1" x="-0.9228" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-a9dbfd21-7fff-7430-c4ea-6fe66f25f1d3&quot;&gt;&lt;div&gt;&lt;font face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Please provide us with details about your project. This information will be used to populate your project page.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Project Title&amp;nbsp;[open ended]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Project Cause [select from list]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; padding-inline-start: 48px;&quot;&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre; margin-left: -36pt;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Project Location (city, country) [open ended, dropdown]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre; margin-left: -36pt;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Project Duration [start and end date]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Project Introduction and problem statement — &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Start with a compelling hook to introduce the project and the problem statement it addresses. Weave in the specific goals and objective of the fundraising initiative &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Please provide additional background and context to your project – &lt;/span&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Provide details about the issue or challenge. Share relevant stats, research or testimonials to support the need. Describe any previous efforts made and their outcomes &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;span style=&quot;font-style: normal; white-space: normal;&quot; id=&quot;docs-internal-guid-6742115e-7fff-6924-1a53-dfea12c340ce&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;What activities will be undertaken by this project? – &lt;/span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Outline the specific actions or activities the project will undertake. Describe the target audience, beneficiaries or communities being supported. Include a timeline or phases of implementation, if possible. &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 12pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;/p&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="320" width="680" x="930" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="65" edge="1" parent="1" source="66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Request Documents" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="67" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;div&gt;*add copy on importance of photos and the type of photos&lt;/div&gt;- Photos (to be used in carousel)" vertex="1">
+          <mxGeometry height="85" width="180" x="540" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="68" edge="1" parent="1" source="69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="204">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fundraising details" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Fundraising goal [open ended]&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Breakdown of fund use &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i&gt;Breakdown how funds would be spent to give donors a clear line of sight to the impact&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Inform donors where excess funds raised would be channelled towards. Likewise, if the fundraising goal is not met, how the funds raised would be used&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Assure transparency and accountability in usage.&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="200" width="420" x="930" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="71" edge="1" parent="1" source="94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1856" as="sourcePoint" />
+            <mxPoint x="800" y="1936" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="Copy:&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;By submitting this information, I confirm that it is true and accurate to the best of my knowledge, and that I am a valid representative of the organisation. I also agree to Agathos&#39; Terms and Conditions.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="135" width="210" x="880" y="1753.5" as="geometry" />
+        </mxCell>
+        <mxCell id="73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="380" width="600" x="-1519" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Apply for the Agathos Trustmark&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="40" width="424" x="-1426" y="1555" as="geometry" />
+        </mxCell>
+        <mxCell id="75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=31;" value="Apply for Agathos Trustmark" vertex="1">
+          <mxGeometry height="46" width="240" x="-1334" y="1834" as="geometry" />
+        </mxCell>
+        <mxCell id="76" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="I&#39;ll do it later" vertex="1">
+          <mxGeometry height="30" width="160" x="-1299" y="1883" as="geometry" />
+        </mxCell>
+        <mxCell id="77" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;span id=&quot;docs-internal-guid-347627c8-7fff-ed3e-2773-26c58efed7f5&quot; style=&quot;&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;We encourage all Project Owners on Agathos to demonstrate strong credibility, transparency. Those that have a good track record can earn the Agathos Trustmark — a badge of trust for donors.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Why apply?&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&amp;gt; Increase donor confidence&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&amp;gt; Higher visibility on the platform&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&amp;gt; Signal transparency and credibility&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&amp;gt; Agathos provides guarantee ....&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="160" width="286" x="-1263" y="1628" as="geometry" />
+        </mxCell>
+        <mxCell id="78" edge="1" parent="1" source="82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79" connectable="0" parent="78" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Apply" vertex="1">
+          <mxGeometry relative="1" x="-0.0885" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="80" edge="1" parent="1" source="82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="81" connectable="0" parent="80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Skip" vertex="1">
+          <mxGeometry relative="1" x="-0.5919" as="geometry">
+            <mxPoint y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Submission success&lt;/div&gt;&lt;div&gt;+&lt;/div&gt;Advertise Trustmark&lt;div&gt;(skippable) (TBC)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="83" edge="1" parent="1" source="84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="84" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Trustmark&lt;div&gt;Verification (TBC)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="85" edge="1" parent="1" source="86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Track Record" vertex="1">
+          <mxGeometry height="60" width="120" x="1180" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="87" edge="1" parent="1" source="88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Disbursement Setup" vertex="1">
+          <mxGeometry height="60" width="120" x="1530" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="89" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-a4e7b39d-7fff-a45c-2dda-5756fb53b18b&quot;&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; padding-inline-start: 48px;&quot;&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Have you run similar projects before? — ☐ Yes, same type ☐ No, first time ☐ Done other types&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Share links or uploads of past projects&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;1&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Describe past project outcomes (optional)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="1090" y="2016" as="geometry" />
+        </mxCell>
+        <mxCell id="90" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="&lt;span style=&quot;text-align: start; font-size: 14.666667px; white-space-collapse: preserve;&quot; id=&quot;docs-internal-guid-a4e7b39d-7fff-a45c-2dda-5756fb53b18b&quot;&gt;&lt;span style=&quot;white-space: normal;&quot; id=&quot;docs-internal-guid-659e8155-7fff-7998-be85-aea5a55a498d&quot;&gt;&lt;ul&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Who will the funds be disbursed to? — Org main account; Project-specific account; Individual or partner org (explain)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Name on receiving bank account — 📎 Upload proof of account ownership&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Is this account controlled by the implementation party? — ☐ Yes ☐ No (explain)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 12pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Who oversees use of funds?&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Describe internal fund control or approval processes&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap;&quot;&gt;Timeline for disbursement&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre; line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="260" width="360" x="1410" y="2016" as="geometry" />
+        </mxCell>
+        <mxCell id="91" edge="1" parent="1" source="92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Commitment to timely updates" vertex="1">
+          <mxGeometry height="60" width="120" x="1800" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="93" edge="1" parent="1" source="94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="94" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Submit" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1791" as="geometry" />
+        </mxCell>
+        <mxCell id="95" edge="1" parent="1" source="96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=39;" value="Terms Agreement&lt;div&gt;+&lt;/div&gt;&lt;div&gt;Submit Org creation&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2360.5" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="97" edge="1" parent="1" source="98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="144">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2190" y="1965.8571428571431" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="98" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Submit" vertex="1">
+          <mxGeometry height="60" width="120" x="2020" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="99" edge="1" parent="1" source="105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="100" connectable="0" parent="99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Private w PW" vertex="1">
+          <mxGeometry relative="1" x="0.5444" y="3" as="geometry">
+            <mxPoint x="-3" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" edge="1" parent="1" source="105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102" connectable="0" parent="101" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Private" vertex="1">
+          <mxGeometry relative="1" x="-0.2932" y="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" edge="1" parent="1" source="105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" connectable="0" parent="103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Public" vertex="1">
+          <mxGeometry relative="1" x="0.4861" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="105" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Agathos system to churn out project page according to type chosen" vertex="1">
+          <mxGeometry height="70" width="185" x="707.5" y="2219" as="geometry" />
+        </mxCell>
+        <mxCell id="106" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="107" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Choose project type&lt;div&gt;(Public, Private, Private w PW)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="260" x="670" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="108" edge="1" parent="1" source="109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="109" parent="1" style="rounded=0;whiteSpace=wrap;html=1;arcSize=50;" value="&#39;Pending&#39; preview project page" vertex="1">
+          <mxGeometry height="70" width="185" x="930" y="2395" as="geometry" />
+        </mxCell>
+        <mxCell id="110" edge="1" parent="1" source="111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="111" parent="1" style="rounded=0;whiteSpace=wrap;html=1;arcSize=50;" value="&#39;Pending&#39; preview project page" vertex="1">
+          <mxGeometry height="70" width="185" x="707.5" y="2395" as="geometry" />
+        </mxCell>
+        <mxCell id="112" edge="1" parent="1" source="113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="113" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Admin to turn on verified tag after verification" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="2515" as="geometry" />
+        </mxCell>
+        <mxCell id="114" edge="1" parent="1" source="115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="207">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="115" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Admin to turn on verified tag after verification" vertex="1">
+          <mxGeometry height="60" width="120" x="962.5" y="2515" as="geometry" />
+        </mxCell>
+        <mxCell id="116" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Do we still want this??? Can do pending instead and put in love gift&lt;div&gt;- Add launch button + best practices&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="380" x="1140" y="2410" as="geometry" />
+        </mxCell>
+        <mxCell id="117" edge="1" parent="1" source="118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&#39;Pending&#39; preview project page" vertex="1">
+          <mxGeometry height="60" width="140" x="515" y="2397.5" as="geometry" />
+        </mxCell>
+        <mxCell id="119" edge="1" parent="1" source="120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="120" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Triage" vertex="1">
+          <mxGeometry height="60" width="120" x="525" y="2515" as="geometry" />
+        </mxCell>
+        <mxCell id="121" edge="1" parent="1" source="123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="122" connectable="0" parent="121" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.6553" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="123" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="SG Registered Charity?" vertex="1">
+          <mxGeometry height="80" width="160" x="505" y="2727" as="geometry" />
+        </mxCell>
+        <mxCell id="124" edge="1" parent="1" source="128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="125" connectable="0" parent="124" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="0.1524" as="geometry">
+            <mxPoint y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="126" edge="1" parent="1" source="128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="127" connectable="0" parent="126" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.13" y="-2" as="geometry">
+            <mxPoint x="2" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="128" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sensitive Project or Person?" vertex="1">
+          <mxGeometry height="80" width="190" x="635" y="2897" as="geometry" />
+        </mxCell>
+        <mxCell id="129" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Inform PO that only Unlisted/Private project type + give reason" vertex="1">
+          <mxGeometry height="50" width="200" x="815" y="3042" as="geometry" />
+        </mxCell>
+        <mxCell id="130" edge="1" parent="1" source="135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="131" connectable="0" parent="130" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.0588" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="132" edge="1" parent="1" source="135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="133" connectable="0" parent="132" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.5412" y="-1" as="geometry">
+            <mxPoint x="-16" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="134" edge="1" parent="1" source="135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="135" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Funds deployed in SG?" vertex="1">
+          <mxGeometry height="80" width="160" x="485" y="3027" as="geometry" />
+        </mxCell>
+        <mxCell id="136" edge="1" parent="1" source="137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="137" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Public" vertex="1">
+          <mxGeometry height="60" width="140" x="325" y="3157" as="geometry" />
+        </mxCell>
+        <mxCell id="138" edge="1" parent="1" source="123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="141" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="495" y="2767" as="sourcePoint" />
+            <mxPoint x="415" y="2867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="139" connectable="0" parent="138" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.2444" y="-3" as="geometry">
+            <mxPoint x="28" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="140" edge="1" parent="1" source="141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="208">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="2980" />
+              <mxPoint x="220" y="2980" />
+              <mxPoint x="220" y="3410" />
+              <mxPoint x="725" y="3410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="141" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Admin toggles from private to public project page + charity badge" vertex="1">
+          <mxGeometry height="60" width="210" x="305" y="2807" as="geometry" />
+        </mxCell>
+        <mxCell id="142" edge="1" parent="1" source="143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="143" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="&lt;div&gt;Propose&lt;/div&gt;Hybrid w warning" vertex="1">
+          <mxGeometry height="60" width="140" x="655" y="3162" as="geometry" />
+        </mxCell>
+        <mxCell id="144" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Admin awards/toggles Trustmark" vertex="1">
+          <mxGeometry height="60" width="120" x="2210.5" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="145" edge="1" parent="1" source="147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="150">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="146" edge="1" parent="1" source="147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="147" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Collect details of individual" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="148" edge="1" parent="1" source="149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=400;exitDy=115;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="152">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="405" />
+              <mxPoint x="110" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="149" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;" value="&lt;ul&gt;&lt;li&gt;Name (filled from account details but editable)&lt;/li&gt;&lt;li&gt;Photo of IC front and back [upload]&lt;/li&gt;&lt;li&gt;Country of residence [filled from account details but editable]&lt;/li&gt;&lt;li&gt;What is/are the cause(s) of the project you wish to start? (Select up to 3) [from cause list]&lt;/li&gt;&lt;li&gt;How are you connected to this cause? [dropdown]&lt;/li&gt;&lt;ul&gt;&lt;li&gt;I run this project&lt;/li&gt;&lt;li&gt;I&#39;m part of the team (staff or volunteer)&lt;/li&gt;&lt;li&gt;I benefit from this project&lt;/li&gt;&lt;li&gt;I&#39;m connected through friends or family&lt;/li&gt;&lt;li&gt;I support the cause and want to help&lt;/li&gt;&lt;li&gt;Other&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Website/social media links (filled from account details but editable. should update info on account after submission)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;How did you come to know about Agathos? [dropdown]&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Social media&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Word of mouth&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Conference/events&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Others&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Please elaborate [open-ended] (for all options chosen)&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="290" width="400" x="-390" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="150" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Agathos store info of individual for future projects" vertex="1">
+          <mxGeometry height="60" width="165" x="160" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="151" edge="1" parent="1" source="152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="152" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Individual details (legitimacy)" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="153" edge="1" parent="1" source="154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="154" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Project details" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="155" edge="1" parent="1" source="156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="159">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="156" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Request Documents" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="157" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;div&gt;*suggest file types&lt;/div&gt;- Evidence of cause&lt;div&gt;- Photos&lt;/div&gt;&lt;div&gt;- Letter of approval (from bene)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="210" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="158" edge="1" parent="1" source="159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="212">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fundraising details" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="160" edge="1" parent="1" source="161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="161" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Choose project type&lt;div&gt;(Public, Private, Private w PW)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="260" x="310" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="162" edge="1" parent="1" source="164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="170">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="163" edge="1" parent="1" source="164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="164" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Submit" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1791" as="geometry" />
+        </mxCell>
+        <mxCell id="165" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="166" connectable="0" parent="165" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Apply" vertex="1">
+          <mxGeometry relative="1" x="-0.4333" y="-6" as="geometry">
+            <mxPoint x="-8" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="167" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="173">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="2065" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="168" connectable="0" parent="167" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Skip" vertex="1">
+          <mxGeometry relative="1" x="-0.8651" y="2" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="169" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="170" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Submission success&lt;/div&gt;&lt;div&gt;+&lt;/div&gt;Advertise Trustmark&lt;div&gt;(skippable) (TBC)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1936" as="geometry" />
+        </mxCell>
+        <mxCell id="171" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;OLD&lt;/div&gt;- Evidence of cause&lt;div&gt;- Evidence of financial need&lt;/div&gt;&lt;div&gt;- Evidence of financial gap&lt;/div&gt;&lt;div&gt;- 5x visuals&lt;/div&gt;&lt;div&gt;- Signed agreement (if advocate)&lt;/div&gt;&lt;div&gt;- Identification - Interview&lt;/div&gt;" vertex="1">
+          <mxGeometry height="129.29" width="160" x="40" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="172" edge="1" parent="1" source="173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="175">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="173" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Agathos churns out a &#39;pending&#39; preview project page" vertex="1">
+          <mxGeometry height="90" width="190" x="-230" y="2219" as="geometry" />
+        </mxCell>
+        <mxCell id="174" edge="1" parent="1" source="175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="177">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="175" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Agathos admin to verify submission" vertex="1">
+          <mxGeometry height="60" width="145" x="-207.5" y="2373" as="geometry" />
+        </mxCell>
+        <mxCell id="176" edge="1" parent="1" source="177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="177" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Triage" vertex="1">
+          <mxGeometry height="60" width="120" x="-195" y="2501.5" as="geometry" />
+        </mxCell>
+        <mxCell id="178" edge="1" parent="1" source="182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="179" connectable="0" parent="178" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="0.1524" as="geometry">
+            <mxPoint y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="180" edge="1" parent="1" source="182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="181" connectable="0" parent="180" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.13" y="-2" as="geometry">
+            <mxPoint x="2" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="182" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sensitive Project or Person?" vertex="1">
+          <mxGeometry height="80" width="190" x="-230" y="2628" as="geometry" />
+        </mxCell>
+        <mxCell id="183" edge="1" parent="1" source="184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="209">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="3060" />
+              <mxPoint x="-140" y="3060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="184" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Inform PO that only Unlisted/Private project type + give reason" vertex="1">
+          <mxGeometry height="50" width="200" x="-50" y="2773" as="geometry" />
+        </mxCell>
+        <mxCell id="185" edge="1" parent="1" source="190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="186" connectable="0" parent="185" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.0588" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="187" edge="1" parent="1" source="190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="194">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-470" y="2888" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="188" connectable="0" parent="187" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.5412" y="-1" as="geometry">
+            <mxPoint x="-16" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="189" edge="1" parent="1" source="190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="192">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="190" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Funds deployed in SG?" vertex="1">
+          <mxGeometry height="80" width="160" x="-380" y="2758" as="geometry" />
+        </mxCell>
+        <mxCell id="191" edge="1" parent="1" source="192" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-139.66666666666652" y="3180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="192" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="&lt;div&gt;Propose&lt;/div&gt;Hybrid w warning" vertex="1">
+          <mxGeometry height="60" width="140" x="-210" y="2893" as="geometry" />
+        </mxCell>
+        <mxCell id="193" edge="1" parent="1" source="194" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="194" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Public&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="140" x="-540" y="2888" as="geometry" />
+        </mxCell>
+        <mxCell id="195" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="75" width="75" x="-1252.5" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="196" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;You have successfully submitted your Project Application&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="40" width="665" x="-1547.5" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="197" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick" value="" vertex="1">
+          <mxGeometry height="50" width="51" x="-1241" y="1362.5" as="geometry" />
+        </mxCell>
+        <mxCell id="198" edge="1" parent="1" source="196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="199" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="A member of our team will verify your submission and get back to you within 5 working days." vertex="1">
+          <mxGeometry height="30" width="500" x="-1465" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="200" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Screenshot of how the trustmark would look in situ" vertex="1">
+          <mxGeometry height="200" width="200" x="-1487" y="1613" as="geometry" />
+        </mxCell>
+        <mxCell id="201" parent="1" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;whiteSpace=wrap;align=left;" value="&lt;ul&gt;&lt;li&gt;Tell us in more detail about the cause your organisation supports (in no more than 500 words) [open-ended, long form answer]&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="70" width="420" x="1291" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="202" parent="1" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;whiteSpace=wrap;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Has your organisation registered with other giving platforms? If so, please list them. [open-ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space-collapse: preserve;&quot;&gt;Please &lt;/span&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;provide a link to the main website of your organisation (add website social media link UI)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Please provide links to your various social media pages (add various social media link fields)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;How did you come to know about Agathos? [dropdown]&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Social media&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Word of mouth&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Conference/events&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Others&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;If yes, please elaborate [open-ended]&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="240" width="420" x="1290" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="203" edge="1" parent="1" source="204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="204" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank account details" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="205" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Type of bank account [dropdown]&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Personal&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Corporate&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Account name [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Account number [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Swift code [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Address [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Bank statement showing account name and number [upload]&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="170" width="420" x="930" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="206" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="User given a button to &#39;publish&#39; page and go LIVE" vertex="1">
+          <mxGeometry height="70" width="162.5" x="718.75" y="2620" as="geometry" />
+        </mxCell>
+        <mxCell id="207" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="User given a button to &#39;publish&#39; page and go LIVE" vertex="1">
+          <mxGeometry height="70" width="162.5" x="941.25" y="2620" as="geometry" />
+        </mxCell>
+        <mxCell id="208" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="User given a button to &#39;publish&#39; page and go LIVE" vertex="1">
+          <mxGeometry height="70" width="273.75" x="588.13" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="209" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="User given a button to &#39;publish&#39; page and go LIVE" vertex="1">
+          <mxGeometry height="70" width="273.75" x="-276.87" y="3180" as="geometry" />
+        </mxCell>
+        <mxCell id="210" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="Copy:&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;By submitting this information, I confirm that it is true and accurate to the best of my knowledge. I also agree to Agathos&#39; Terms and Conditions.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="135" width="210" x="150" y="1753.5" as="geometry" />
+        </mxCell>
+        <mxCell id="211" edge="1" parent="1" source="212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="212" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank account details" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="213" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;UI allow saving of bank details. Future project can use saved details or key in new one.&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Type of bank account [dropdown]&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Personal&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Corporate&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Account name (must match PO name) [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Account number [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Swift code [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Address [open ended]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Bank statement showing account name and number [upload]&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="195" width="420" x="-75" y="1332.5" as="geometry" />
+        </mxCell>
+        <mxCell id="214" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=16;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Fundraising goal [open ended]&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Breakdown of fund use &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i&gt;Breakdown how funds would be spent to give donors a clear line of sight to the impact&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Inform donors where excess funds raised would be channelled towards. Likewise, if the fundraising goal is not met, how the funds raised would be used&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Assure transparency and accountability in usage.&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="200" width="420" x="-75" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="215" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="CALL AI" vertex="1">
+          <mxGeometry height="60" width="120" x="2600" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="216" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="If Public page type is selected, CALL AI" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="1853" as="geometry" />
+        </mxCell>
+        <mxCell id="217" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;" value="&lt;span style=&quot;text-align: start;&quot; id=&quot;docs-internal-guid-a9dbfd21-7fff-7430-c4ea-6fe66f25f1d3&quot;&gt;&lt;div&gt;&lt;font face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14.666667px; white-space-collapse: preserve;&quot;&gt;Please provide us with details about your project. This information will be used to populate your project page.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Project Title&amp;nbsp;[open ended]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-family: Arial, sans-serif;&quot;&gt;Project Cause [select from list]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; padding-inline-start: 48px;&quot;&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre; margin-left: -36pt;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Project Location (city, country) [open ended, dropdown]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;list-style-type: disc; font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre; margin-left: -36pt;&quot; aria-level=&quot;2&quot; dir=&quot;ltr&quot;&gt;&lt;p style=&quot;line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Project Duration [start and end date]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Project Introduction and problem statement — &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Start with a compelling hook to introduce the project and the problem statement it addresses. Weave in the specific goals and objective of the fundraising initiative &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Please provide additional background and context to your project – &lt;/span&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Provide details about the issue or challenge. Share relevant stats, research or testimonials to support the need. Describe any previous efforts made and their outcomes &lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; white-space: pre-wrap; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;span style=&quot;font-style: normal; white-space: normal;&quot; id=&quot;docs-internal-guid-6742115e-7fff-6924-1a53-dfea12c340ce&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;What activities will be undertaken by this project? – &lt;/span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; font-style: italic; font-variant-ligatures: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;Outline the specific actions or activities the project will undertake. Describe the target audience, beneficiaries or communities being supported. Include a timeline or phases of implementation, if possible. &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial, sans-serif; font-size: 14.666667px; white-space: pre-wrap;&quot;&gt;[open ended, follow character limit for project page]&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;font-family: Arial, sans-serif; font-size: 11pt; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 12pt;&quot; role=&quot;presentation&quot; dir=&quot;ltr&quot;&gt;&lt;/p&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="320" width="680" x="-320" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="218" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use info from previous steps to auto-populate project page" vertex="1">
+          <mxGeometry height="124" width="220" x="-510" y="2202" as="geometry" />
+        </mxCell>
+        <mxCell id="219" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use info from previous steps to auto-populate project page" vertex="1">
+          <mxGeometry height="124" width="220" x="498.75" y="2100" as="geometry" />
+        </mxCell>
+        <mxCell id="220" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;p style=&quot;text-align: start;&quot; data-end=&quot;367&quot; data-start=&quot;100&quot;&gt;Copy:&lt;/p&gt;&lt;p style=&quot;text-align: start;&quot; data-end=&quot;367&quot; data-start=&quot;100&quot;&gt;At Agathos, we operate on a love gift model, with contributions coming from both donors and project owners. For project owners, the love gift is typically set at &lt;b&gt;10% of total funds raised&lt;/b&gt;. This helps sustain the platform and ensure we can continue serving projects like yours.&lt;/p&gt;&lt;p style=&quot;text-align: start;&quot; data-end=&quot;367&quot; data-start=&quot;100&quot;&gt;If you’d like to explore a different percentage, please reach out to our Partnerships Lead at rachel@agathos.be, and we’ll work with you to find the best way to support your project.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="320" x="950" y="1555" as="geometry" />
+        </mxCell>
+        <mxCell id="221" edge="1" parent="1" source="222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="222" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Love Gift to Agathos" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="1665" as="geometry" />
+        </mxCell>
+        <mxCell id="223" edge="1" parent="1" source="222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="224" edge="1" parent="1" source="225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="225" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Love Gift to Agathos" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="1665" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

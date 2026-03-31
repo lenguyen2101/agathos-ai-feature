@@ -1,0 +1,39 @@
+{
+  "name": "@vudovn/antigravity-kit",
+  "version": "1.0.5",
+  "description": "CLI tool to setup Antigravity Kit skills and MCPs",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "ag-kit": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vudovn/antigravity-kit.git"
+  },
+  "homepage": "https://github.com/vudovn/antigravity-kit#readme",
+  "bugs": {
+    "url": "https://github.com/vudovn/antigravity-kit/issues"
+  },
+  "keywords": [
+    "antigravity",
+    "cli",
+    "ai",
+    "agent",
+    "gemini",
+    "skills"
+  ],
+  "author": "Do Van Vu",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.3.3",
+    "giget": "^2.0.0",
+    "ora": "^8.2.0"
+  }
+}

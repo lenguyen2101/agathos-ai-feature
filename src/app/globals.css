@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+/* 
+   AGATHOS PREMIUM DESIGN SYSTEM (UI/UX Pro Max)
+*/
+
+@theme {
+    --color-brand-blue: #4A8FE7;
+    --color-brand-blue-hover: #3376CB;
+    --color-brand-blue-soft: rgba(74, 143, 231, 0.08);
+    --color-brand-gold: #E8A838;
+    --color-bg-canvas: #F5F7FA;
+    --color-bg-glass: rgba(255, 255, 255, 1);
+    --color-bg-card: #FFFFFF;
+    --color-text-hero: #0F172A;
+    --color-text-body: #334155;
+    --color-text-muted: #64748B;
+    --color-border-subtle: #F8FAFC;
+    --color-border-glass: rgba(255, 255, 255, 0.5);
+    --shadow-premium: 0 10px 40px -10px rgba(74, 143, 231, 0.15);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* Custom Utilities */
+@utility glass {
+    background: var(--color-bg-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border-subtle);
+}
+
+@utility container-soft {
+    @apply max-w-7xl mx-auto px-4;
+}
+
+/* Base style overrides */
+body {
+    background: var(--color-bg-canvas);
+    color: var(--color-text-body);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* Main Layout - 3-Panel (Desktop) */
+.app-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr 380px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Panel Containers */
+.left-panel-container {
+    @apply glass border-r overflow-y-auto flex flex-col h-full;
+    z-index: 20;
+}
+
+.center-panel-container {
+    @apply overflow-y-auto relative h-full;
+}
+
+.right-panel-container {
+    @apply glass border-l flex flex-col h-full;
+    z-index: 20;
+}
+
+/* Premium Component Classes */
+.ag-btn-primary {
+    @apply bg-brand-blue text-white px-6 py-3 rounded-2xl font-black transition-all duration-300 flex items-center gap-2;
+    box-shadow: 0 4px 14px 0 rgba(74, 143, 231, 0.39);
+}
+
+.ag-btn-primary:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 6px 20px rgba(74, 143, 231, 0.5);
+    background-color: var(--color-brand-blue-hover);
+}
+
+.ag-card-premium {
+    @apply bg-white p-6 rounded-[2rem] transition-all duration-300 border border-slate-50;
+    box-shadow: var(--shadow-premium);
+}
+
+.ag-card-premium:hover {
+    @apply border-brand-blue/20;
+}
+
+/* Onboarding Flow Styles */
+.onboarding-step-indicator {
+    @apply h-2 rounded-full bg-slate-100 overflow-hidden;
+}
+
+.onboarding-step-progress {
+    @apply h-full bg-brand-blue;
+    transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Chat bubble overrides for premium look */
+.chat-bubble-new {
+    @apply p-4 rounded-3xl text-sm leading-relaxed max-w-[85%];
+}
+
+.chat-bubble-ai-new {
+    @apply bg-white text-slate-800 rounded-bl-sm border border-slate-100;
+    box-shadow: var(--shadow-glass);
+}
+
+.chat-bubble-user-new {
+    @apply bg-brand-blue text-white rounded-br-sm;
+    box-shadow: 0 8px 16px -4px rgba(74, 143, 231, 0.4);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 rounded-full hover:bg-slate-300;
+}
+
+/* RESPONSIVE PATCHES */
+@media (max-width: 1280px) {
+    .app-layout {
+        grid-template-columns: 280px 1fr;
+    }
+    .right-panel-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        overflow-y: auto !important;
+        background: white !important;
+    }
+    .app-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+        background: white !important;
+    }
+    .app-layout > .left-panel-container, 
+    .app-layout > .right-panel-container {
+        display: none !important;
+    }
+    .center-panel-container {
+        overflow: visible !important;
+        height: auto !important;
+        padding-top: 64px !important;
+        background: white !important;
+    }
+    .container-soft {
+        padding: 0 16px !important;
+    }
+    /* Mobile Overlay Style */
+    .fixed .left-panel-container, 
+    .fixed .right-panel-container {
+        display: flex !important;
+        background: white !important;
+        width: 100% !important;
+        border: none !important;
+    }
+    .ag-card-premium {
+        @apply shadow-none border-slate-100;
+        border-radius: 1.5rem !important;
+        padding: 1.5rem !important;
+    }
+}
