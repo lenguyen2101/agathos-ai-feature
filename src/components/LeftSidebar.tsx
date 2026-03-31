@@ -11,7 +11,9 @@ import {
   FileText,
   User,
   LogOut,
-  ChevronRight
+  ChevronRight,
+  DollarSign,
+  Users
 } from "lucide-react";
 
 export default function LeftSidebar({ 
@@ -29,7 +31,10 @@ export default function LeftSidebar({
     { text: "What is the TrustMark?", icon: <ShieldCheck className="w-4 h-4" /> },
     { text: "How do I start a project?", icon: <Sparkles className="w-4 h-4" /> },
     { text: "Required documents?", icon: <FileText className="w-4 h-4" /> },
-    { text: "Love Gift Model", icon: <CreditCard className="w-4 h-4" /> }
+    { text: "Love Gift Model", icon: <CreditCard className="w-4 h-4" /> },
+    { text: "What are the platform fees?", icon: <DollarSign className="w-4 h-4" /> },
+    { text: "Is Agathos a charity?", icon: <HelpCircle className="w-4 h-4" /> },
+    { text: "How to manage roles?", icon: <Users className="w-4 h-4" /> }
   ];
 
   return (
