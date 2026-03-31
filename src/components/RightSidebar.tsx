@@ -13,7 +13,7 @@ export default function RightSidebar({
   onQueryHandled: () => void 
 }) {
   const [messages, setMessages] = useState<{ role: 'user' | 'ai', content: string }[]>([
-    { role: 'ai', content: "Hello! I'm the Agathos AI. How can I help you with your project onboarding or documentation today?" }
+    { role: 'ai', content: "👋 **Hello!** I'm the **Agathos AI Digital Receptionist**. \n\nHow can I help you with your **project onboarding** or **platform documentation** today?" }
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);

@@ -116,6 +116,26 @@ h1, h2, h3, .font-heading {
     box-shadow: 0 8px 16px -4px rgba(74, 143, 231, 0.4);
 }
 
+/* Markdown Support in Chat */
+.chat-bubble-ai-new article {
+    @apply text-slate-800;
+}
+.chat-bubble-ai-new article strong {
+    @apply text-brand-blue font-black;
+}
+.chat-bubble-ai-new article ul, .chat-bubble-ai-new article ol {
+    @apply my-3 space-y-2;
+}
+.chat-bubble-ai-new article li {
+    @apply relative pl-1;
+}
+.chat-bubble-ai-new article li p {
+    @apply inline;
+}
+.chat-bubble-ai-new article hr {
+    @apply my-4 border-slate-100;
+}
+
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
     width: 6px;
