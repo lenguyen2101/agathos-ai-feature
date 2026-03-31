@@ -52,7 +52,7 @@ export default function DocumentViewer() {
                   </p>
                 </div>
                 <div className="relative w-full lg:w-80 group">
-                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300 group-focus-within:text-brand-blue transition-colors" />
+                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-brand-blue transition-colors" />
                   <input 
                     type="text"
                     placeholder="Search documents..."
@@ -108,7 +108,7 @@ export default function DocumentViewer() {
           >
             <button 
               onClick={() => setSelectedTopic(null)}
-              className="flex items-center gap-2 text-xs lg:text-sm font-black text-slate-300 hover:text-brand-blue mb-2 transition-colors uppercase tracking-widest"
+              className="flex items-center gap-2 text-xs lg:text-sm font-black text-slate-400 hover:text-brand-blue mb-2 transition-colors uppercase tracking-widest"
             >
               <ArrowLeft className="w-3 h-3 lg:w-4 lg:h-4" />
               Close Document
@@ -145,7 +145,7 @@ export default function DocumentViewer() {
                </div>
                
                <div className="mt-12 lg:mt-20 pt-8 lg:pt-10 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-[10px] lg:text-sm font-bold text-slate-300 uppercase tracking-widest">Protocol Verified</span>
+                  <span className="text-[10px] lg:text-sm font-black text-slate-400 uppercase tracking-widest">Protocol Verified</span>
                   <button className="ag-btn-primary !text-[10px] lg:!text-sm !py-2 lg:!py-3 !px-4 lg:!px-8">
                     Contact RACHEL
                   </button>

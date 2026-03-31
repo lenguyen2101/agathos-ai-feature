@@ -63,17 +63,21 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
           </p>
           
           <div className="bg-slate-50 p-6 lg:p-8 rounded-3xl text-left border border-slate-100 max-w-xl mx-auto shadow-inner">
-            <h3 className="font-black text-brand-blue mb-4 lg:mb-6 text-[10px] lg:text-sm uppercase tracking-widest flex items-center gap-2">
+            <h3 className="font-black text-brand-blue mb-6 text-sm uppercase tracking-widest flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4" />
-              Summary
+              Comprehensive Summary
             </h3>
-            <div className="space-y-3 lg:space-y-4">
-              {Object.entries(answers).slice(0, 4).map(([key, val]) => {
+            <div className="space-y-6">
+              {Object.entries(answers).map(([key, val]) => {
                 const q = onboardingQuestions.find(v => v.id === key);
                 return (
-                  <div key={key} className="flex justify-between items-center border-b border-slate-200 pb-2 last:border-0 last:pb-0">
-                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-wider truncate mr-4">{q?.question?.slice(0, 30) || key}...</span>
-                    <span className="font-bold text-slate-900 text-sm">{val.toString()}</span>
+                  <div key={key} className="flex flex-col gap-1.5 border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+                    <span className="text-slate-400 text-xs font-black uppercase tracking-[0.15em] leading-relaxed">
+                      {q?.question || key}
+                    </span>
+                    <span className="font-bold text-slate-900 text-base lg:text-lg">
+                      {val.toString()}
+                    </span>
                   </div>
                 );
               })}
@@ -106,7 +110,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
         </div>
         <div className="hidden lg:flex items-center bg-white px-6 py-3 rounded-2xl shadow-sm border border-slate-100 font-bold text-slate-500 tabular-nums">
            <span className="text-brand-blue">{currentStep + 1}</span>
-           <span className="text-slate-300 mx-2">/</span>
+           <span className="text-slate-400 font-black mx-2">/</span>
            {visibleQuestions.length}
         </div>
       </div>
@@ -199,7 +203,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                     }
                     setAnswers({ ...answers, [question.id]: val });
                   }}
-                  className="w-full py-4 lg:py-8 text-xl lg:text-4xl font-black border-b-4 lg:border-b-8 border-slate-100 focus:border-brand-blue focus:outline-none transition-all placeholder:text-slate-100 text-slate-900 bg-transparent"
+                  className="w-full py-4 lg:py-8 text-xl lg:text-4xl font-black border-b-4 lg:border-b-8 border-slate-100 focus:border-brand-blue focus:outline-none transition-all placeholder:text-slate-300 text-slate-900 bg-transparent"
                 />
                 <div className="absolute right-2 bottom-4 text-slate-200 pointer-events-none hidden lg:block">
                     <Zap className="w-6 h-6" />
@@ -214,7 +218,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                 value={answers[question.id] || ""}
                 onChange={(e) => setAnswers({ ...answers, [question.id]: e.target.value })}
                 rows={4}
-                className="w-full p-4 lg:p-8 text-sm lg:text-xl border-2 border-slate-100 rounded-3xl focus:border-brand-blue focus:outline-none transition-all placeholder:text-slate-200 text-slate-800 bg-white shadow-inner"
+                className="w-full p-4 lg:p-8 text-sm lg:text-xl border-2 border-slate-100 rounded-3xl focus:border-brand-blue focus:outline-none transition-all placeholder:text-slate-400 text-slate-800 bg-white shadow-inner"
               />
             )}
           </div>
@@ -257,7 +261,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
         </motion.div>
       </AnimatePresence>
       
-      <div className="mt-8 lg:mt-12 flex items-center justify-center gap-3 text-slate-300">
+      <div className="mt-8 lg:mt-12 flex items-center justify-center gap-3 text-slate-400 font-bold">
           <Info className="w-3 h-3 lg:w-4 lg:h-4" />
           <p className="text-[9px] lg:text-xs font-bold uppercase tracking-widest">End-to-End Encryption Enabled</p>
       </div>

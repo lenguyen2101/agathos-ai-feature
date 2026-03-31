@@ -139,7 +139,7 @@ export default function RightSidebar({
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSend()}
             placeholder="Search Agathos documentation..."
-            className="w-full py-4 px-6 pr-14 bg-white border-2 border-slate-100 rounded-2xl outline-none focus:border-brand-blue transition-all shadow-sm placeholder:text-slate-300 font-medium text-sm group-hover:border-brand-blue/30"
+            className="w-full py-4 px-6 pr-14 bg-white border-2 border-slate-100 rounded-2xl outline-none focus:border-brand-blue transition-all shadow-sm placeholder:text-slate-400 font-medium text-sm group-hover:border-brand-blue/30"
           />
           <button 
             onClick={() => handleSend()}
@@ -149,7 +149,7 @@ export default function RightSidebar({
             {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-4 h-4 ml-0.5" />}
           </button>
         </div>
-        <p className="text-[10px] text-center text-slate-300 mt-4 leading-relaxed font-medium">
+        <p className="text-[10px] text-center text-slate-400 mt-4 leading-relaxed font-black uppercase tracking-widest">
           Grounded in Agathos documentation. <br/>May generate incorrect info about non-platform topics.
         </p>
       </div>
