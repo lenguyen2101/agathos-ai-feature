@@ -14,7 +14,10 @@ import {
   User,
   PartyPopper,
   X,
-  Zap
+  Zap,
+  Upload,
+  FileText,
+  FileSearch
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -67,21 +70,28 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
               <CheckCircle2 className="w-4 h-4" />
               Comprehensive Summary
             </h3>
-            <div className="space-y-6">
-              {Object.entries(answers).map(([key, val]) => {
-                const q = onboardingQuestions.find(v => v.id === key);
+              {visibleQuestions.map((q) => {
+                const val = answers[q.id];
+                if (val === undefined || val === null || val === '') return null;
+                const isFile = q.type === 'upload';
                 return (
-                  <div key={key} className="flex flex-col gap-1.5 border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+                  <div key={q.id} className="flex flex-col gap-1.5 border-b border-slate-100 pb-4 last:border-0 last:pb-0">
                     <span className="text-slate-400 text-xs font-black uppercase tracking-[0.15em] leading-relaxed">
-                      {q?.question || key}
+                      {q.question}
                     </span>
-                    <span className="font-bold text-slate-900 text-base lg:text-lg">
-                      {val.toString()}
+                    <span className={`font-bold text-slate-900 text-base lg:text-lg flex items-center gap-2 ${isFile ? 'text-brand-blue' : ''}`}>
+                      {isFile ? (
+                        <>
+                          <FileText className="w-4 h-4" />
+                          {val}
+                        </>
+                      ) : (
+                        val.toString()
+                      )}
                     </span>
                   </div>
                 );
               })}
-            </div>
           </div>
           
           <button 
@@ -220,6 +230,80 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                 rows={4}
                 className="w-full p-4 lg:p-8 text-sm lg:text-xl border-2 border-slate-100 rounded-3xl focus:border-brand-blue focus:outline-none transition-all placeholder:text-slate-400 text-slate-800 bg-white shadow-inner"
               />
+            )}
+
+            {question.type === 'upload' && (
+              <div className="flex flex-col items-center">
+                <label 
+                  className={`w-full p-10 lg:p-20 border-4 border-dashed rounded-[2.5rem] flex flex-col items-center justify-center gap-4 cursor-pointer transition-all ${
+                    answers[question.id] 
+                      ? 'border-brand-blue bg-brand-blue-soft text-brand-blue' 
+                      : 'border-slate-100 hover:border-brand-blue/30 hover:bg-slate-50 text-slate-400'
+                  }`}
+                >
+                  <input 
+                    type="file" 
+                    className="hidden" 
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) setAnswers({ ...answers, [question.id]: file.name });
+                    }} 
+                  />
+                  <div className={`w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center transition-all ${
+                    answers[question.id] ? 'bg-brand-blue text-white' : 'bg-slate-50 text-slate-300'
+                  }`}>
+                    {answers[question.id] ? <CheckCircle2 className="w-8 h-8 lg:w-10 lg:h-10" /> : <Upload className="w-8 h-8 lg:w-10 lg:h-10" />}
+                  </div>
+                  <div className="text-center">
+                    <p className="text-lg lg:text-2xl font-black mb-1">
+                      {answers[question.id] || "Click to upload file"}
+                    </p>
+                    <p className="text-[10px] lg:text-xs font-bold uppercase tracking-widest opacity-60">
+                      PDF, JPG or PNG (MAX. 10MB)
+                    </p>
+                  </div>
+                </label>
+                {answers[question.id] && (
+                  <button 
+                    onClick={() => setAnswers({ ...answers, [question.id]: null })}
+                    className="mt-4 text-xs font-black text-red-500 uppercase tracking-widest hover:text-red-700 transition-colors"
+                  >
+                    Remove file
+                  </button>
+                )}
+              </div>
+            )}
+
+            {question.type === 'multi-select' && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-4">
+                {question.options?.map(opt => {
+                  const currentValues = Array.isArray(answers[question.id]) ? answers[question.id] : [];
+                  const isSelected = currentValues.includes(opt);
+                  return (
+                    <button
+                      key={opt}
+                      onClick={() => {
+                        const nextValues = isSelected 
+                          ? currentValues.filter((v: string) => v !== opt)
+                          : [...currentValues, opt];
+                        setAnswers({ ...answers, [question.id]: nextValues });
+                      }}
+                      className={`p-4 lg:p-6 rounded-2xl border-2 text-left transition-all group flex items-center justify-between ${
+                        isSelected 
+                          ? 'border-brand-blue bg-brand-blue-soft/50 text-brand-blue font-bold shadow-lg shadow-blue-500/5' 
+                          : 'border-slate-100 lg:hover:border-brand-blue/30 lg:hover:bg-slate-50'
+                      }`}
+                    >
+                      <span className="text-sm lg:text-lg">{opt}</span>
+                      <div className={`w-5 h-5 rounded-md border-2 transition-all flex items-center justify-center ${
+                        isSelected ? 'bg-brand-blue border-brand-blue' : 'border-slate-200'
+                      }`}>
+                        {isSelected && <CheckCircle2 className="w-3 h-3 text-white" />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             )}
           </div>
 
