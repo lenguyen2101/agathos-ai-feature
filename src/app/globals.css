@@ -16,104 +16,106 @@
     --color-text-hero: #0F172A;
     --color-text-body: #334155;
     --color-text-muted: #64748B;
-    --color-border-subtle: #F8FAFC;
-    --color-border-glass: rgba(255, 255, 255, 0.5);
-    --shadow-premium: 0 10px 40px -10px rgba(74, 143, 231, 0.15);
-    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    --color-border-subtle: #F1F5F9;
+    --color-border-glass: rgba(226, 232, 240, 0.5);
+    --shadow-premium: 0 4px 20px -5px rgba(15, 23, 42, 0.05); /* Minimalist shadow */
+    --shadow-glass: 0 4px 12px 0 rgba(15, 23, 42, 0.03);
 }
 
 /* Custom Utilities */
 @utility glass {
     background: var(--color-bg-glass);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(8px);
     border: 1px solid var(--color-border-subtle);
 }
 
 @utility container-soft {
-    @apply max-w-7xl mx-auto px-4;
+    @apply max-w-6xl mx-auto px-6;
 }
 
 /* Base style overrides */
 body {
-    background: var(--color-bg-canvas);
+    background: #FFFFFF; /* Pure white background for minimalism */
     color: var(--color-text-body);
     font-family: 'Inter', sans-serif;
+    font-size: 15px; /* Base 15px */
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
 h1, h2, h3, .font-heading {
     font-family: 'Outfit', sans-serif;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    font-weight: 800;
 }
 
 /* Main Layout - 3-Panel (Desktop) */
 .app-layout {
     display: grid;
-    grid-template-columns: 300px 1fr 380px;
+    grid-template-columns: 280px 1fr 340px;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background: #FFFFFF;
 }
 
 /* Panel Containers */
 .left-panel-container {
-    @apply glass border-r overflow-y-auto flex flex-col h-full;
+    @apply border-r border-slate-100 overflow-y-auto flex flex-col h-full bg-slate-50/50;
     z-index: 20;
 }
 
 .center-panel-container {
-    @apply overflow-y-auto relative h-full;
+    @apply overflow-y-auto relative h-full bg-white;
 }
 
 .right-panel-container {
-    @apply glass border-l flex flex-col h-full;
+    @apply border-l border-slate-100 flex flex-col h-full bg-slate-50/50;
     z-index: 20;
 }
 
-/* Premium Component Classes */
+/* Premium Component Classes - Minimalist Overhaul */
 .ag-btn-primary {
-    @apply bg-brand-blue text-white px-6 py-3 rounded-2xl font-black transition-all duration-300 flex items-center gap-2;
-    box-shadow: 0 4px 14px 0 rgba(74, 143, 231, 0.39);
+    @apply bg-brand-blue text-white px-8 py-4 rounded-xl font-bold transition-all duration-200 flex items-center justify-center gap-2;
+    box-shadow: none; /* No shadow */
 }
 
 .ag-btn-primary:hover {
-    @apply -translate-y-0.5;
-    box-shadow: 0 6px 20px rgba(74, 143, 231, 0.5);
+    @apply opacity-90;
     background-color: var(--color-brand-blue-hover);
+    box-shadow: 0 10px 20px -10px var(--color-brand-blue);
 }
 
 .ag-card-premium {
-    @apply bg-white p-6 rounded-[2rem] transition-all duration-300 border border-slate-50;
+    @apply bg-white p-8 rounded-3xl transition-all duration-300 border border-slate-100;
     box-shadow: var(--shadow-premium);
 }
 
 .ag-card-premium:hover {
-    @apply border-brand-blue/20;
+    @apply border-slate-200;
 }
 
 /* Onboarding Flow Styles */
 .onboarding-step-indicator {
-    @apply h-2 rounded-full bg-slate-100 overflow-hidden;
+    @apply h-1.5 rounded-full bg-slate-100 overflow-hidden;
 }
 
 .onboarding-step-progress {
-    @apply h-full bg-brand-blue;
-    transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply h-full bg-brand-blue rounded-full;
+    transition: width 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-/* Chat bubble overrides for premium look */
+/* Chat bubble overrides for minimalist look */
 .chat-bubble-new {
-    @apply p-4 rounded-3xl text-sm leading-relaxed max-w-[85%];
+    @apply p-4 rounded-2xl text-sm leading-relaxed max-w-[90%];
 }
 
 .chat-bubble-ai-new {
-    @apply bg-white text-slate-800 rounded-bl-sm border border-slate-100;
-    box-shadow: var(--shadow-glass);
+    @apply bg-slate-50 text-slate-800 rounded-bl-none border border-slate-100;
 }
 
 .chat-bubble-user-new {
-    @apply bg-brand-blue text-white rounded-br-sm;
-    box-shadow: 0 8px 16px -4px rgba(74, 143, 231, 0.4);
+    @apply bg-brand-blue text-white rounded-br-none;
 }
 
 /* Markdown Support in Chat */

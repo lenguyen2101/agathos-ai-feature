@@ -78,7 +78,7 @@ export default function RightSidebar({
             <h2 className="text-sm font-bold text-slate-900 leading-tight">Agathos AI</h2>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Online Assistance</span>
+              <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">Online Assistance</span>
             </div>
           </div>
         </div>
@@ -99,16 +99,16 @@ export default function RightSidebar({
               className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'}`}
             >
               <div className={`flex items-end gap-2 max-w-[95%] ${m.role === 'user' ? 'flex-row-reverse' : ''}`}>
-                <div className={`p-1.5 rounded-full shrink-0 ${m.role === 'user' ? 'bg-brand-blue text-white' : 'bg-white border border-slate-100 text-brand-blue shadow-sm'}`}>
+                <div className={`p-1.5 rounded-full shrink-0 ${m.role === 'user' ? 'bg-brand-blue text-white' : 'bg-white border border-slate-100 text-brand-blue'}`}>
                   {m.role === 'user' ? <User className="w-3 h-3" /> : <Bot className="w-3 h-3" />}
                 </div>
-                <div className={`chat-bubble-new ${m.role === 'user' ? 'chat-bubble-user-new shadow-lg shadow-blue-500/10' : 'chat-bubble-ai-new border-slate-100 shadow-sm'}`}>
+                <div className={`chat-bubble-new ${m.role === 'user' ? 'chat-bubble-user-new' : 'chat-bubble-ai-new border-slate-100'}`}>
                   <article className="prose prose-sm prose-slate max-w-none text-inherit leading-relaxed">
                     <ReactMarkdown>{m.content}</ReactMarkdown>
                   </article>
                 </div>
               </div>
-              <span className="text-[10px] text-slate-400 mt-2 px-1 font-bold uppercase tracking-widest opacity-60">
+              <span className="text-sm text-slate-400 mt-2 px-1 font-bold uppercase tracking-widest opacity-60">
                 {m.role === 'ai' ? 'Assistant' : 'Member'} • Now
               </span>
             </motion.div>
@@ -144,14 +144,11 @@ export default function RightSidebar({
           <button 
             onClick={() => handleSend()}
             disabled={isLoading || !input.trim()}
-            className="absolute right-2 top-2 w-10 h-10 flex items-center justify-center bg-brand-blue text-white rounded-xl disabled:opacity-50 disabled:grayscale transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/20"
+            className="absolute right-2 top-2 w-10 h-10 flex items-center justify-center bg-brand-blue text-white rounded-xl disabled:opacity-50 disabled:grayscale transition-all hover:scale-105 active:scale-95"
           >
             {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-4 h-4 ml-0.5" />}
           </button>
         </div>
-        <p className="text-[10px] text-center text-slate-400 mt-4 leading-relaxed font-black uppercase tracking-widest">
-          Grounded in Agathos documentation. <br/>May generate incorrect info about non-platform topics.
-        </p>
       </div>
     </aside>
   );

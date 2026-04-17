@@ -40,12 +40,12 @@ export default function LeftSidebar({
   return (
     <aside className="left-panel-container h-full p-6 flex flex-col">
       <div className="flex items-center gap-3 mb-10 px-2">
-        <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-blue-500/20">
+        <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white font-black text-xl">
           A
         </div>
         <div>
           <h1 className="text-xl font-heading font-black text-slate-900 leading-none">agathos</h1>
-          <p className="text-[10px] tracking-[0.2em] font-bold text-slate-400 uppercase mt-1">Digital Receptionist</p>
+          <p className="text-xs tracking-[0.2em] font-bold text-slate-400 uppercase mt-1">Digital Receptionist</p>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export default function LeftSidebar({
           Smart Onboarding
         </button>
 
-        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] px-4 mb-3">Menu</p>
+        <p className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] px-4 mb-3">Menu</p>
         
         <button 
           onClick={() => setActiveTab('docs')}
@@ -75,7 +75,7 @@ export default function LeftSidebar({
         </button>
 
         <div className="my-8">
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] px-4 mb-4">Common Questions</p>
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] px-4 mb-4">Common Questions</p>
           <div className="flex flex-col gap-1">
             {commonQuestions.map((q) => (
               <button 
@@ -93,25 +93,6 @@ export default function LeftSidebar({
           </div>
         </div>
       </nav>
-
-      <div className="mt-auto p-4 bg-slate-50/50 rounded-3xl border border-slate-100/50">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-blue-100 border-2 border-white overflow-hidden shadow-sm">
-            <div className="w-full h-full bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold">
-              R
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-sm font-bold text-slate-900">Rachel Tan</span>
-            <button className="text-[11px] font-bold text-brand-blue text-left flex items-center gap-1 hover:underline">
-              Visit Profile <ChevronRight className="w-2.5 h-2.5" />
-            </button>
-          </div>
-          <button className="ml-auto p-2 bg-white rounded-xl shadow-sm hover:text-brand-blue transition-colors">
-            <LogOut className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
     </aside>
   );
 }

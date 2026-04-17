@@ -7,6 +7,7 @@ export interface Question {
   options?: string[];
   placeholder?: string;
   section: string;
+  groupId: string; // New field for grouping
   dependsOn?: {
     questionId: string;
     value: string;
@@ -29,6 +30,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["As an Individual", "As an Organisation"],
     section: "Triage",
+    groupId: "triage",
     required: true
   },
 
@@ -43,6 +45,7 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "Legal entity name",
     section: "Organisation Profile",
+    groupId: "org-identity",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -52,6 +55,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: COUNTRY_LIST,
     section: "Organisation Profile",
+    groupId: "org-identity",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -60,6 +64,7 @@ export const onboardingQuestions: Question[] = [
     question: "Is your organisation a registered charity/non-profit in this country?",
     type: "yes-no",
     section: "Organisation Profile",
+    groupId: "org-identity",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -69,6 +74,7 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "Detailed description of your mission and activities",
     section: "Organisation Profile",
+    groupId: "org-mission",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -78,6 +84,7 @@ export const onboardingQuestions: Question[] = [
     type: "multi-select",
     options: CAUSE_LIST,
     section: "Organisation Profile",
+    groupId: "org-scope",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -86,6 +93,7 @@ export const onboardingQuestions: Question[] = [
     type: "multi-select",
     options: COUNTRY_LIST,
     section: "Organisation Profile",
+    groupId: "org-scope",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -94,6 +102,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["< 5 members", "5-10 members", "10-25 members", "25-50 members", "> 50 members"],
     section: "Organisation Profile",
+    groupId: "org-scope",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -101,15 +110,16 @@ export const onboardingQuestions: Question[] = [
     question: "Can you offer tax deductions to donors? (Singapore only)",
     type: "yes-no",
     section: "Organisation Profile",
+    groupId: "org-scope",
     dependsOn: { questionId: "org-country", value: "Singapore" }
   },
-  // NEW: 4 additional org profile fields
   {
     id: "org-cause-description",
     question: "Tell us in more detail about the cause your organisation supports (max 500 words)",
     type: "textarea",
     placeholder: "Describe your organisation's mission, impact, and the communities you serve...",
     section: "Organisation Profile",
+    groupId: "org-context",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -118,6 +128,7 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "e.g. Give.asia, GlobalGiving, GoFundMe",
     section: "Organisation Profile",
+    groupId: "org-links",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -126,6 +137,7 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "Website URL, Facebook, Instagram, LinkedIn, etc. (one per line)",
     section: "Organisation Profile",
+    groupId: "org-links",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
   {
@@ -134,6 +146,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["Social Media", "Word of Mouth", "Conference/Events", "Others"],
     section: "Organisation Profile",
+    groupId: "org-links",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" }
   },
 
@@ -144,6 +157,7 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "Enter registration ID",
     section: "Compliance Documents",
+    groupId: "compliance-1",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -152,6 +166,7 @@ export const onboardingQuestions: Question[] = [
     question: "Upload Registration Certificate (PDF/Image)",
     type: "upload",
     section: "Compliance Documents",
+    groupId: "compliance-1",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -160,15 +175,16 @@ export const onboardingQuestions: Question[] = [
     question: "Upload latest Financial Statements or Annual Report",
     type: "upload",
     section: "Compliance Documents",
+    groupId: "compliance-2",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
-  // NEW: Org bank statement upload
   {
     id: "org-bank-statement-upload",
     question: "Upload a Bank Statement showing the name of the account (PDF)",
     type: "upload",
     section: "Compliance Documents",
+    groupId: "compliance-2",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
@@ -179,17 +195,18 @@ export const onboardingQuestions: Question[] = [
     question: "Any sanctions or adverse media on company, owners, or directors?",
     type: "yes-no",
     section: "Risk Declaration",
+    groupId: "risk",
     redFlagValue: "Yes",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
   },
-  // NEW: Sanctions detail (conditional)
   {
     id: "sanctions-details",
     question: "Please provide brief details about the sanctions or adverse media",
     type: "textarea",
     placeholder: "Explain the nature and status of any sanctions or adverse media...",
     section: "Risk Declaration",
+    groupId: "risk",
     dependsOn: { questionId: "sanctions-check", value: "Yes" },
     required: true
   },
@@ -198,6 +215,7 @@ export const onboardingQuestions: Question[] = [
     question: "Any Politically Exposed Persons (PEPs) involved?",
     type: "yes-no",
     section: "Risk Declaration",
+    groupId: "risk",
     redFlagValue: "Yes",
     dependsOn: { questionId: "onboarding-type", value: "As an Organisation" },
     required: true
@@ -211,14 +229,34 @@ export const onboardingQuestions: Question[] = [
     question: "Full Name (Legal)",
     type: "text",
     section: "Personal Profile",
+    groupId: "ind-profile",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
     required: true
+  },
+  {
+    id: "individual-country",
+    question: "Country of Residence",
+    type: "dropdown",
+    options: COUNTRY_LIST,
+    section: "Personal Profile",
+    groupId: "ind-profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
+  },
+  {
+    id: "individual-referral",
+    question: "How did you come to know about Agathos?",
+    type: "dropdown",
+    options: ["Social Media", "Word of Mouth", "Conference/Events", "Others"],
+    section: "Personal Profile",
+    groupId: "ind-profile",
+    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
   {
     id: "ic-upload-front",
     question: "Upload Identity Card (Front)",
     type: "upload",
     section: "Personal Profile",
+    groupId: "ind-identity",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
     required: true
   },
@@ -227,6 +265,7 @@ export const onboardingQuestions: Question[] = [
     question: "Upload Identity Card (Back)",
     type: "upload",
     section: "Personal Profile",
+    groupId: "ind-identity",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" },
     required: true
   },
@@ -236,6 +275,7 @@ export const onboardingQuestions: Question[] = [
     type: "multi-select",
     options: CAUSE_LIST,
     section: "Personal Profile",
+    groupId: "ind-mission",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
   {
@@ -244,15 +284,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["I run this project", "Staff or Volunteer", "Beneficiary", "Friend or Family", "Supporter", "Other"],
     section: "Personal Profile",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
-  },
-  // NEW: 3 individual profile fields
-  {
-    id: "individual-country",
-    question: "Country of Residence",
-    type: "dropdown",
-    options: COUNTRY_LIST,
-    section: "Personal Profile",
+    groupId: "ind-mission",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
   {
@@ -261,14 +293,7 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "Website URL, Facebook, Instagram, etc. (one per line)",
     section: "Personal Profile",
-    dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
-  },
-  {
-    id: "individual-referral",
-    question: "How did you come to know about Agathos?",
-    type: "dropdown",
-    options: ["Social Media", "Word of Mouth", "Conference/Events", "Others"],
-    section: "Personal Profile",
+    groupId: "ind-social",
     dependsOn: { questionId: "onboarding-type", value: "As an Individual" }
   },
 
@@ -281,15 +306,16 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "Give your initiative a name",
     section: "Project Details",
+    groupId: "project-identity",
     required: true
   },
-  // NEW: Project Cause
   {
     id: "project-cause",
     question: "Project Cause",
     type: "dropdown",
     options: CAUSE_LIST,
     section: "Project Details",
+    groupId: "project-identity",
     required: true
   },
   {
@@ -297,15 +323,16 @@ export const onboardingQuestions: Question[] = [
     question: "Project Location (City, Country)",
     type: "text",
     placeholder: "City, Country (e.g. Phnom Penh, Cambodia)",
-    section: "Project Details"
+    section: "Project Details",
+    groupId: "project-identity"
   },
-  // NEW: Project Duration
   {
     id: "project-duration",
     question: "Project Duration",
     type: "text",
-    placeholder: "e.g. Jan 2026 - Dec 2026 (start and end date)",
-    section: "Project Details"
+    placeholder: "e.g. Jan 2026 - Dec 2026",
+    section: "Project Details",
+    groupId: "project-identity"
   },
   {
     id: "project-problem",
@@ -313,36 +340,39 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "Start with a compelling hook and describe the challenge...",
     section: "Project Details",
+    groupId: "project-intro",
     required: true
   },
-  // NEW: Project Background
   {
     id: "project-background",
     question: "Additional background and context for your project",
     type: "textarea",
-    placeholder: "Provide details about the issue or challenge. Share relevant stats, research, or testimonials to support the need. Describe any previous efforts and their outcomes.",
-    section: "Project Details"
+    placeholder: "Provide details about the issue or challenge. Share relevant stats, research, or testimonials to support the need.",
+    section: "Project Details",
+    groupId: "project-bg"
   },
   {
     id: "project-activities",
     question: "What specific actions/activities will be undertaken?",
     type: "textarea",
     placeholder: "Outline your action plan and target beneficiaries...",
-    section: "Project Details"
+    section: "Project Details",
+    groupId: "project-actions"
   },
   {
     id: "cause-evidence-upload",
     question: "Upload Evidence of Cause / Approval Letter",
     type: "upload",
     section: "Project Details",
+    groupId: "project-media",
     required: true
   },
-  // NEW: Project Photos
   {
     id: "project-photos",
     question: "Upload photos for your project page (used in carousel)",
     type: "upload",
-    section: "Project Details"
+    section: "Project Details",
+    groupId: "project-media"
   },
 
   // ═══════════════════════════════════════════
@@ -354,6 +384,7 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "e.g. 25000",
     section: "Financials",
+    groupId: "funding-goals",
     required: true
   },
   {
@@ -362,15 +393,16 @@ export const onboardingQuestions: Question[] = [
     type: "textarea",
     placeholder: "How will the money be spent? Please ensure transparency.",
     section: "Financials",
+    groupId: "funding-goals",
     required: true
   },
-  // NEW: Excess/Shortfall plan
   {
     id: "fund-excess-shortfall",
     question: "Plan for excess or shortfall in fundraising",
     type: "textarea",
     placeholder: "Where will excess funds be channelled? If the goal isn't met, how will raised funds be used?",
     section: "Financials",
+    groupId: "funding-risk",
     required: true
   },
   {
@@ -379,6 +411,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["Personal Account", "Corporate/Organisation Account"],
     section: "Financials",
+    groupId: "bank-1",
     required: true
   },
   {
@@ -386,6 +419,7 @@ export const onboardingQuestions: Question[] = [
     question: "Account Holder Name",
     type: "text",
     section: "Financials",
+    groupId: "bank-1",
     required: true
   },
   {
@@ -393,30 +427,32 @@ export const onboardingQuestions: Question[] = [
     question: "Bank Account Number",
     type: "text",
     section: "Financials",
+    groupId: "bank-1",
     required: true
   },
-  // NEW: SWIFT code
   {
     id: "bank-swift",
     question: "SWIFT / BIC Code",
     type: "text",
     placeholder: "e.g. DBSSSGSG",
     section: "Financials",
+    groupId: "bank-2",
     required: true
   },
-  // NEW: Bank Address
   {
     id: "bank-address",
     question: "Bank Address",
     type: "text",
     placeholder: "Full address of the bank branch",
-    section: "Financials"
+    section: "Financials",
+    groupId: "bank-2"
   },
   {
     id: "bank-statement-upload",
     question: "Upload Bank Statement (Proof of Ownership)",
     type: "upload",
     section: "Financials",
+    groupId: "bank-2",
     required: true
   },
 
@@ -428,6 +464,15 @@ export const onboardingQuestions: Question[] = [
     question: "Platform Support: At Agathos, we operate on a Love Gift model (typically 10% for success). Do you agree?",
     type: "yes-no",
     section: "Final Review",
+    groupId: "final-checks",
+    required: true
+  },
+  {
+    id: "terms-ack",
+    question: "Confirm accuracy: I am a valid representative and agree to Terms & Conditions.",
+    type: "yes-no",
+    section: "Final Review",
+    groupId: "final-checks",
     required: true
   },
   {
@@ -436,6 +481,7 @@ export const onboardingQuestions: Question[] = [
     type: "dropdown",
     options: ["Public (Visible to all)", "Private (URL access only)", "Private with Password"],
     section: "Final Review",
+    groupId: "visibility",
     required: true
   },
   {
@@ -444,14 +490,9 @@ export const onboardingQuestions: Question[] = [
     type: "text",
     placeholder: "Enter a secure password for your private project",
     section: "Final Review",
+    groupId: "visibility",
     dependsOn: { questionId: "project-visibility", value: "Private with Password" },
-    required: true
-  },
-  {
-    id: "terms-ack",
-    question: "Confirm accuracy: I am a valid representative and agree to Terms & Conditions.",
-    type: "yes-no",
-    section: "Final Review",
     required: true
   }
 ];
+
