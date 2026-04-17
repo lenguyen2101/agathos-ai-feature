@@ -28,6 +28,14 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
   const [isFinished, setIsFinished] = useState(false);
   const [isGenerating, setIsGenerating] = useState<string | null>(null);
 
+  // Auto-scroll to top when step changes
+  React.useEffect(() => {
+    const scrollContainer = document.querySelector('.center-panel-container');
+    if (scrollContainer) {
+      scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [currentStep]);
+
   // Helper to determine if a question should be visible
   const isQuestionVisible = (q: Question, currentAnswers: Record<string, any>) => {
     if (!q.dependsOn) return true;
