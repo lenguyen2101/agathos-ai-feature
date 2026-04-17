@@ -327,27 +327,55 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
             <PartyPopper className="w-8 h-8 lg:w-10 lg:h-10" />
           </div>
           <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-4 tracking-tighter">Submission sent!</h2>
-          <p className="text-base lg:text-xl text-slate-500 mb-8 lg:mb-12 font-medium max-w-md mx-auto">
+          <p className="text-base lg:text-xl text-slate-500 mb-8 lg:mb-12 font-medium mx-auto">
             Great job! You've successfully submitted your project details for review.
           </p>
           
-          <div className="bg-slate-50 p-6 lg:p-10 rounded-[2rem] text-left border border-slate-100 max-w-xl mx-auto overflow-hidden">
-            <h3 className="font-bold text-sm text-brand-blue mb-8 uppercase tracking-widest flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" /> Comprehensive Summary
-            </h3>
-            <div className="space-y-6 max-h-[400px] overflow-y-auto pr-4 custom-scrollbar">
-              {onboardingQuestions.filter(q => isQuestionVisible(q, answers)).map((q) => {
-                const val = answers[q.id];
-                if (val === undefined || val === null || val === '') return null;
-                const isFile = q.type === 'upload';
+          <div className="text-left w-full mt-12">
+            <div className="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4">
+               <div className="p-2 bg-brand-blue/10 rounded-xl">
+                 <FileText className="w-5 h-5 text-brand-blue" />
+               </div>
+               <div>
+                 <h3 className="font-black text-lg text-slate-900 leading-tight">Project Blueprint</h3>
+                 <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-0.5">Summary of your application</p>
+               </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Grouping by sections for better logic */}
+              {['Identity', 'Project', 'Compliance', 'Financials'].map(section => {
+                const sectionQuestions = onboardingQuestions.filter(q => 
+                  q.section.includes(section) && 
+                  isQuestionVisible(q, answers) && 
+                  answers[q.id]
+                );
+
+                if (sectionQuestions.length === 0) return null;
+
                 return (
-                  <div key={q.id} className="flex flex-col gap-1 label-group">
-                    <span className="text-slate-400 text-xs font-bold uppercase tracking-widest">
-                      {q.question}
-                    </span>
-                    <span className={`font-bold text-slate-900 text-sm lg:text-base ${isFile ? 'text-brand-blue' : ''}`}>
-                      {isFile ? `📄 ${val}` : val.toString()}
-                    </span>
+                  <div key={section} className="p-6 bg-slate-50/50 rounded-3xl border border-slate-100 transition-all hover:bg-white hover:shadow-sm">
+                    <h4 className="text-xs font-black text-brand-blue uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                       <span className="w-1 h-1 bg-brand-blue rounded-full"></span>
+                       {section}
+                    </h4>
+                    <div className="space-y-5">
+                      {sectionQuestions.map(q => {
+                        const val = answers[q.id];
+                        const isFile = q.type === 'upload';
+                        return (
+                          <div key={q.id} className="flex flex-col gap-1.5">
+                            <span className="text-slate-400 text-xs font-bold uppercase tracking-wider leading-tight">
+                              {q.question}
+                            </span>
+                            <span className={`font-bold text-slate-900 text-sm lg:text-base leading-snug ${isFile ? 'text-brand-blue flex items-center gap-1.5' : ''}`}>
+                              {isFile && <Upload className="w-3.5 h-3.5" />}
+                              {isFile ? val : val.toString()}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 );
               })}
