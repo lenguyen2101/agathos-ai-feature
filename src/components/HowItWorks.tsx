@@ -61,7 +61,7 @@ export default function HowItWorks() {
             <div className="container-content relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <p className="text-[#c084fc] font-mono text-sm mb-3 tracking-wider">// QUICK START</p>
+                    <p className="text-[#c084fc] font-mono text-sm mb-3 tracking-wider">{"// QUICK START"}</p>
                     <h2 className="heading-lg mb-4">
                         Get Started in <span className="text-[#22c55e]">3 Steps</span>
                     </h2>

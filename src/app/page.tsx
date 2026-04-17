@@ -19,7 +19,7 @@ export default function Home() {
     setIsMobileMenuOpen(false);
   };
 
-  const handleOnboardingComplete = (data: any) => {
+  const handleOnboardingComplete = (data: Record<string, string | string[]>) => {
     console.log("Onboarding Complete:", data);
   };
 
@@ -51,7 +51,7 @@ export default function Home() {
       <LeftSidebar 
         activeTab={activeTab === 'onboarding' ? '' : activeTab} 
         setActiveTab={(tab) => {
-            setActiveTab(tab as any);
+        setActiveTab(tab as "docs" | "onboarding");
             setIsMobileMenuOpen(false);
         }}
         onStartOnboarding={handleStartOnboarding}
@@ -74,7 +74,7 @@ export default function Home() {
              <LeftSidebar 
                 activeTab={activeTab === 'onboarding' ? '' : activeTab} 
                 setActiveTab={(tab) => {
-                    setActiveTab(tab as any);
+                    setActiveTab(tab as "docs" | "onboarding");
                     setIsMobileMenuOpen(false);
                 }}
                 onStartOnboarding={handleStartOnboarding}

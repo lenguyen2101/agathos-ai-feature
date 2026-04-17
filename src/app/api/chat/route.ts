@@ -25,7 +25,7 @@ export async function POST(req: Request) {
       history: [
         { role: "user", parts: [{ text: AGATHOS_SYSTEM_PROMPT }] },
         { role: "model", parts: [{ text: "Understood. I am the Agathos AI Digital Receptionist. I am ready to help you." }] },
-        ...messages.slice(0, -1).map((m: any) => ({
+        ...messages.slice(0, -1).map((m: { role: string; content: string }) => ({
           role: m.role === "user" ? "user" : "model",
           parts: [{ text: m.content }],
         })),
@@ -40,9 +40,10 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ content: text }), {
       headers: { "Content-Type": "application/json" },
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error("Chat API error:", error);
-    return new Response(JSON.stringify({ error: error.message || "An unexpected error occurred." }), {
+    const errorMessage = error instanceof Error ? error.message : "An unexpected error occurred.";
+    return new Response(JSON.stringify({ error: errorMessage }), {
       status: 500,
     });
   }

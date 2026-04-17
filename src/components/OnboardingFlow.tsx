@@ -22,11 +22,13 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function OnboardingFlow({ onComplete }: { onComplete: (data: any) => void }) {
+export default function OnboardingFlow({ onComplete }: { onComplete: (data: Record<string, string | string[]>) => void }) {
   const [currentStep, setCurrentStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, any>>({});
+  const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
   const [isFinished, setIsFinished] = useState(false);
   const [isGenerating, setIsGenerating] = useState<string | null>(null);
+  const [summary, setSummary] = useState<string | null>(null);
+  const [isSummarizing, setIsSummarizing] = useState(false);
 
   // Auto-scroll to top when step changes
   React.useEffect(() => {
@@ -34,10 +36,48 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
     if (scrollContainer) {
       scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, [currentStep]);
+  }, [currentStep, isFinished]);
+
+  // AI Summary Generation when finished
+  React.useEffect(() => {
+     if (isFinished && !summary && !isSummarizing) {
+       const generateSummary = async () => {
+         setIsSummarizing(true);
+         try {
+           const controller = new AbortController();
+           const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
+
+           const res = await fetch('/api/ai/onboarding', {
+             method: 'POST',
+             headers: { 'Content-Type': 'application/json' },
+             body: JSON.stringify({ action: 'summarize', context: answers }),
+             signal: controller.signal
+           });
+           
+           clearTimeout(timeoutId);
+           
+           if (!res.ok) throw new Error(`Server responded with ${res.status}`);
+           const data = await res.json();
+           if (data.suggestion) {
+             setSummary(data.suggestion);
+           } else {
+             throw new Error(data.error || "No summary returned");
+           }
+         } catch (e) {
+           console.error("Summary Generation Error:", e);
+           // Fallback summary if AI fails
+           const projectTitle = (answers['project-title'] as string) || "your project";
+           setSummary(`We have received your application for "${projectTitle}". Our team will review the details and get back to you soon.`);
+         } finally {
+           setIsSummarizing(false);
+         }
+       };
+       generateSummary();
+     }
+  }, [isFinished, answers, summary, isSummarizing]);
 
   // Helper to determine if a question should be visible
-  const isQuestionVisible = (q: Question, currentAnswers: Record<string, any>) => {
+  const isQuestionVisible = (q: Question, currentAnswers: Record<string, string | string[]>) => {
     if (!q.dependsOn) return true;
     return currentAnswers[q.dependsOn.questionId] === q.dependsOn.value;
   };
@@ -256,7 +296,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
             </label>
             {answers[q.id] && (
               <button 
-                onClick={() => setAnswers({ ...answers, [q.id]: null })}
+                onClick={() => setAnswers({ ...answers, [q.id]: "" })}
                 className="mt-2 text-xs font-bold text-red-500 uppercase tracking-widest hover:text-red-700"
               >
                 Remove
@@ -268,7 +308,7 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
         {q.type === 'multi-select' && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {q.options?.map(opt => {
-              const currentValues = Array.isArray(answers[q.id]) ? answers[q.id] : [];
+              const currentValues = Array.isArray(answers[q.id]) ? (answers[q.id] as string[]) : [];
               const isSelected = currentValues.includes(opt);
               return (
                 <button
@@ -316,35 +356,78 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
 
   if (isFinished) {
     return (
-      <div className="onboarding-container px-4 py-12 lg:py-20 min-h-screen flex flex-col justify-center">
+      <div className="onboarding-container px-4 py-12 lg:py-20 min-h-screen flex flex-col items-center">
         <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="ag-card-premium text-center !p-8 lg:!p-16 relative overflow-hidden"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="w-full max-w-4xl"
         >
-          <div className="absolute top-0 left-0 w-full h-2 bg-brand-blue opacity-10"></div>
-          <div className="w-16 h-16 lg:w-20 lg:h-20 bg-brand-blue-soft text-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 lg:mb-10">
-            <PartyPopper className="w-8 h-8 lg:w-10 lg:h-10" />
+          <div className="text-center mb-16 px-4">
+            <div className="w-20 h-20 lg:w-24 lg:h-24 bg-brand-blue-soft text-brand-blue rounded-full flex items-center justify-center mx-auto mb-8 relative">
+              <PartyPopper className="w-10 h-10 lg:w-12 lg:h-12" />
+              <motion.div 
+                animate={{ scale: [1, 1.2, 1] }} 
+                transition={{ repeat: Infinity, duration: 2 }}
+                className="absolute inset-0 rounded-full border-4 border-brand-blue/20"
+              />
+            </div>
+            <h2 className="text-4xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter">Submission sent!</h2>
+            <p className="text-lg lg:text-2xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+              Great job! You&apos;ve successfully submitted your project details for review.
+            </p>
           </div>
-          <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-4 tracking-tighter">Submission sent!</h2>
-          <p className="text-base lg:text-xl text-slate-500 mb-8 lg:mb-12 font-medium mx-auto">
-            Great job! You've successfully submitted your project details for review.
-          </p>
+
+          {/* AI SUMMARY SECTION */}
+          {(isSummarizing || summary) && (
+             <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mb-16 p-8 lg:p-12 bg-slate-900 rounded-[2.5rem] relative overflow-hidden group"
+             >
+                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <Sparkles className="w-24 h-24 text-white" />
+                </div>
+                <div className="relative z-10">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center">
+                            <Bot className="w-6 h-6 text-white" />
+                        </div>
+                        <span className="text-xs font-black text-brand-blue uppercase tracking-[0.3em]">AI Executive Review</span>
+                    </div>
+                    
+                    {isSummarizing ? (
+                        <div className="space-y-4">
+                            <div className="h-4 bg-white/10 rounded-full w-3/4 animate-pulse"></div>
+                            <div className="h-4 bg-white/10 rounded-full w-1/2 animate-pulse"></div>
+                        </div>
+                    ) : (
+                        <p className="text-lg lg:text-xl font-bold text-white leading-relaxed">
+                            {summary}
+                        </p>
+                    )}
+                </div>
+             </motion.div>
+          )}
           
-          <div className="text-left w-full mt-12">
-            <div className="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4">
-               <div className="p-2 bg-brand-blue/10 rounded-xl">
-                 <FileText className="w-5 h-5 text-brand-blue" />
+          <div className="ag-card-premium !p-8 lg:!p-16 !rounded-[3rem] w-full">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-16 pb-8 border-b border-slate-100">
+               <div className="flex items-center gap-4">
+                 <div className="p-4 bg-brand-blue/10 rounded-2xl">
+                   <FileText className="w-8 h-8 text-brand-blue" />
+                 </div>
+                 <div>
+                   <h3 className="text-2xl lg:text-3xl font-black text-slate-900 leading-tight">Project Blueprint</h3>
+                   <p className="text-sm text-slate-400 font-bold uppercase tracking-widest mt-1">Summary of your project application</p>
+                 </div>
                </div>
-               <div>
-                 <h3 className="font-black text-lg text-slate-900 leading-tight">Project Blueprint</h3>
-                 <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-0.5">Summary of your application</p>
+               <div className="px-5 py-2.5 bg-brand-blue-soft rounded-full text-brand-blue font-black text-xs uppercase tracking-widest flex items-center gap-2 self-start lg:self-center">
+                  <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></div>
+                  Pending Review
                </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Grouping by sections for better logic */}
-              {['Identity', 'Project', 'Compliance', 'Financials'].map(section => {
+            <div className="space-y-20">
+              {['Identity', 'Project', 'Compliance', 'Financials', 'Final Review'].map(section => {
                 const sectionQuestions = onboardingQuestions.filter(q => 
                   q.section.includes(section) && 
                   isQuestionVisible(q, answers) && 
@@ -354,24 +437,50 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                 if (sectionQuestions.length === 0) return null;
 
                 return (
-                  <div key={section} className="p-6 bg-slate-50/50 rounded-3xl border border-slate-100 transition-all hover:bg-white hover:shadow-sm">
-                    <h4 className="text-xs font-black text-brand-blue uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
-                       <span className="w-1 h-1 bg-brand-blue rounded-full"></span>
-                       {section}
-                    </h4>
-                    <div className="space-y-5">
+                  <div key={section} className="relative">
+                    <div className="flex items-center gap-4 mb-10">
+                      <h4 className="text-sm font-black text-brand-blue uppercase tracking-[0.3em] whitespace-nowrap">
+                         {section}
+                      </h4>
+                      <div className="h-px w-full bg-slate-100"></div>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 gap-y-12">
                       {sectionQuestions.map(q => {
                         const val = answers[q.id];
                         const isFile = q.type === 'upload';
+                        const isMulti = Array.isArray(val);
+                        
                         return (
-                          <div key={q.id} className="flex flex-col gap-1.5">
-                            <span className="text-slate-400 text-xs font-bold uppercase tracking-wider leading-tight">
+                          <div key={q.id} className="group transition-all">
+                            <span className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] mb-3 block">
                               {q.question}
                             </span>
-                            <span className={`font-bold text-slate-900 text-sm lg:text-base leading-snug ${isFile ? 'text-brand-blue flex items-center gap-1.5' : ''}`}>
-                              {isFile && <Upload className="w-3.5 h-3.5" />}
-                              {isFile ? val : val.toString()}
-                            </span>
+                            <div className="flex items-start gap-4">
+                                {isFile ? (
+                                    <div className="flex items-center gap-3 p-4 bg-brand-blue-soft/50 rounded-2xl border border-brand-blue/10 w-full group-hover:border-brand-blue/30 transition-all">
+                                        <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                                            <Upload className="w-5 h-5 text-brand-blue" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <p className="font-bold text-brand-blue text-sm lg:text-base break-all">{val}</p>
+                                            <p className="text-[10px] text-brand-blue/60 font-black uppercase tracking-widest mt-0.5">Verified Document</p>
+                                        </div>
+                                    </div>
+                                ) : isMulti ? (
+                                    <div className="flex flex-wrap gap-2">
+                                        {val.map((item: string) => (
+                                            <span key={item} className="px-4 py-2 bg-slate-50 border border-slate-100 rounded-xl text-sm font-bold text-slate-700">
+                                                {item}
+                                            </span>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <p className="text-base font-bold text-slate-900 leading-relaxed group-hover:text-brand-blue transition-colors duration-300">
+                                        {val.toString()}
+                                    </p>
+                                )}
+                            </div>
                           </div>
                         );
                       })}
@@ -380,9 +489,17 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: any)
                 );
               })}
             </div>
+
+            <div className="mt-20 pt-16 border-t border-slate-100 flex flex-col items-center gap-8">
+                <div className="text-center">
+                    <p className="text-slate-400 font-bold text-sm mb-2">Ready to return to your dashboard?</p>
+                    <button onClick={() => window.location.reload()} className="ag-btn-primary min-w-[200px] !py-5 !text-xl !rounded-2xl">
+                        Go Home
+                        <ArrowRight className="w-6 h-6" />
+                    </button>
+                </div>
+            </div>
           </div>
-          
-          <button onClick={() => window.location.reload()} className="ag-btn-primary mt-10 mx-auto">Go Home</button>
         </motion.div>
       </div>
     );

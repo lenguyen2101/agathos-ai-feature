@@ -29,7 +29,7 @@ export default function Credits() {
             <div className="max-w-3xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <p className="text-[#c084fc] font-mono text-sm mb-3">// CREDITS</p>
+                    <p className="text-[#c084fc] font-mono text-sm mb-3">{"// CREDITS"}</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Built upon <span className="text-[#22c55e]">amazing</span> tools
                     </h2>

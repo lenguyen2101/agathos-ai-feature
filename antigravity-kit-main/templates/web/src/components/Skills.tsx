@@ -83,7 +83,7 @@ export default function Skills() {
             <div className="max-w-5xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <p className="text-[#c084fc] font-mono text-sm mb-3">// SKILLS</p>
+                    <p className="text-[#c084fc] font-mono text-sm mb-3">{"// SKILLS"}</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         <span className="text-[#22c55e]">35+</span> Domain Expert Skills
                     </h2>

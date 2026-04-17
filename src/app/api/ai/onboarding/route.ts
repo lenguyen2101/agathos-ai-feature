@@ -40,18 +40,37 @@ export async function POST(req: Request) {
         
         Provide a 2-3 sentence suggestion that the user can adapt. No preamble, no quotes.
       `;
+    } else if (action === "summarize") {
+      prompt = `
+        You are an expert grant writer and social impact consultant for Agathos.
+        Based on the following project application details, provide a concise, high-impact 2-sentence summary of the project submission.
+        Focus on the mission, the project location, and intended impact.
+        Use a professional and inspiring tone.
+
+        Application Details: ${JSON.stringify(context)}
+        
+        Provide only the summary text. No preamble, no quotes.
+      `;
     }
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text().trim().replace(/^["']|["']$/g, '');
 
+    if (!text) {
+      return new Response(JSON.stringify({ error: "AI generated an empty response" }), { 
+        status: 500,
+        headers: { "Content-Type": "application/json" }
+      });
+    }
+
     return new Response(JSON.stringify({ suggestion: text }), {
       headers: { "Content-Type": "application/json" },
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error("AI Onboarding error:", error);
-    return new Response(JSON.stringify({ error: error.message }), { 
+    const errorMessage = error instanceof Error ? error.message : "Unknown server error";
+    return new Response(JSON.stringify({ error: errorMessage }), { 
       status: 500,
       headers: { "Content-Type": "application/json" }
     });

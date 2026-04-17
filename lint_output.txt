@@ -1,0 +1,60 @@
+
+> web@0.1.0 lint
+> eslint
+
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/antigravity-kit-main/templates/web/src/components/Credits.tsx
+  32:74  error    Comments inside children section of tag should be placed inside braces                                                                                                                                                                                                                   react/jsx-no-comment-textnodes
+  54:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/antigravity-kit-main/templates/web/src/components/Features.tsx
+  87:74  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/antigravity-kit-main/templates/web/src/components/HowItWorks.tsx
+  64:89  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/antigravity-kit-main/templates/web/src/components/Navbar.tsx
+  3:7  warning  'GitHubIcon' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/antigravity-kit-main/templates/web/src/components/Skills.tsx
+  86:74  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/app/api/ai/onboarding/route.ts
+  5:21  warning  'questionId' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/app/api/chat/route.ts
+  28:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  43:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/app/page.tsx
+   8:39  warning  'HelpCircle' is defined but never used    @typescript-eslint/no-unused-vars
+  22:43  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  54:33  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  77:41  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/Credits.tsx
+  32:74  error    Comments inside children section of tag should be placed inside braces                                                                                                                                                                                                                   react/jsx-no-comment-textnodes
+  54:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/DocumentViewer.tsx
+  6:3  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/Features.tsx
+  87:74  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/LeftSidebar.tsx
+   8:3  warning  'MessageSquare' is defined but never used  @typescript-eslint/no-unused-vars
+  12:3  warning  'User' is defined but never used           @typescript-eslint/no-unused-vars
+  13:3  warning  'LogOut' is defined but never used         @typescript-eslint/no-unused-vars
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/Navbar.tsx
+  3:7  warning  'GitHubIcon' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Volumes/DATA/1. [Agathos] Design/Agathos-AI-feature/src/components/RightSidebar.tsx
+   4:38  warning  'X' is defined but never used                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   4:50  warning  'Sparkles' is defined but never used                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   4:60  warning  'MessageCircle' is defined but never used                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  27:6   warning  React Hook useEffect has missing dependencies: 'handleSend' and 'onQueryHandled'. Either include them or remove the dependency array. If 'onQueryHandled' changes too often, find the parent component that defines it and wrap that definition in useCallback  react-hooks/exhaustive-deps
+
+✖ 25 problems (11 errors, 14 warnings)
+
