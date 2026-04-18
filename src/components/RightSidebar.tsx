@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Send, Bot, User, RefreshCw, X, Loader2, Sparkles, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
+import { postJson } from "@/lib/api-client";
 
 export default function RightSidebar({ 
   pendingQuery, 
@@ -42,22 +43,17 @@ export default function RightSidebar({
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          messages: messages.concat({ role: 'user', content: userMessage }).map(m => ({
-            role: m.role,
-            content: m.content
-          }))
-        }),
+      const data = await postJson<{ content?: string }>('/api/chat', {
+        messages: messages.concat({ role: 'user', content: userMessage }).map(m => ({
+          role: m.role,
+          content: m.content
+        }))
       });
 
-      const data = await response.json();
       if (data.content) {
-        setMessages(prev => [...prev, { role: 'ai', content: data.content }]);
+        setMessages(prev => [...prev, { role: 'ai', content: data.content! }]);
       } else {
-        throw new Error(data.error || "Failed to get response");
+        throw new Error("Failed to get response");
       }
     } catch (error) {
       console.error("Chat error:", error);

@@ -21,6 +21,7 @@ import {
   Loader2
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { postJson } from "@/lib/api-client";
 
 export default function OnboardingFlow({ onComplete }: { onComplete: (data: Record<string, string | string[]>) => void }) {
   const [currentStep, setCurrentStep] = useState(0);
@@ -44,28 +45,18 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: Reco
        const generateSummary = async () => {
          setIsSummarizing(true);
          try {
-           const controller = new AbortController();
-           const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
-
-           const res = await fetch('/api/ai/onboarding', {
-             method: 'POST',
-             headers: { 'Content-Type': 'application/json' },
-             body: JSON.stringify({ action: 'summarize', context: answers }),
-             signal: controller.signal
-           });
-           
-           clearTimeout(timeoutId);
-           
-           if (!res.ok) throw new Error(`Server responded with ${res.status}`);
-           const data = await res.json();
+           const data = await postJson<{ suggestion?: string }>(
+             '/api/ai/onboarding',
+             { action: 'summarize', context: answers },
+             { timeoutMs: 10000 }
+           );
            if (data.suggestion) {
              setSummary(data.suggestion);
            } else {
-             throw new Error(data.error || "No summary returned");
+             throw new Error("No summary returned");
            }
          } catch (e) {
            console.error("Summary Generation Error:", e);
-           // Fallback summary if AI fails
            const projectTitle = (answers['project-title'] as string) || "your project";
            setSummary(`We have received your application for "${projectTitle}". Our team will review the details and get back to you soon.`);
          } finally {
@@ -131,20 +122,15 @@ export default function OnboardingFlow({ onComplete }: { onComplete: (data: Reco
   const handleAIAction = async (question: Question, action: 'rewrite' | 'suggest') => {
     setIsGenerating(question.id);
     try {
-      const res = await fetch('/api/ai/onboarding', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          action, 
-          questionId: question.id, 
-          questionText: question.question, 
-          currentText: answers[question.id] || "",
-          context: answers 
-        })
+      const data = await postJson<{ suggestion?: string }>('/api/ai/onboarding', {
+        action,
+        questionId: question.id,
+        questionText: question.question,
+        currentText: answers[question.id] || "",
+        context: answers
       });
-      const data = await res.json();
       if (data.suggestion) {
-        setAnswers(prev => ({ ...prev, [question.id]: data.suggestion }));
+        setAnswers(prev => ({ ...prev, [question.id]: data.suggestion! }));
       }
     } catch (e) {
       console.error("AI Error:", e);
