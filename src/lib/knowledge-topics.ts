@@ -72,6 +72,50 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     icon: "🚀"
   },
   {
+    id: "create-event-flow",
+    title: "Creating an Event",
+    description: "Step-by-step flow for creating a new event (play.agathos.be/events/create).",
+    content: [
+      "The Create Event flow has 4 steps shown in a stepper at the top. Navigation buttons: Back/Previous, Next (with validation), Save (draft), Submit (only on Step 4).",
+
+      "Step 1 — Build your event page. Fields:",
+      "- Event Title: text, up to 200 characters.",
+      "- Banner Photo*: click the '+' area to upload. Error if empty: 'Please upload banner photo'. Note: 'You can edit your banner photo later'.",
+      "- Event Type*: dropdown. Default: Public Event. Options: Public Event, Private – Unlisted With Password, Private – Unlisted Without Password.",
+      "- Ticketing Type*: dropdown. Default: Paid Event. Options: Free Event, Paid Event. For Paid Event, a warning shows: 'Platform and processing fees apply for paid tickets.'",
+      "- Currency* (only when Paid Event): searchable dropdown. Default: SGD.",
+      "- Timezone*: searchable dropdown. Default: (GMT +08:00) Asia/Singapore.",
+      "- Event Start Time*: date-time picker with Now and OK buttons. Format: DD/MM/YYYY HH:MM.",
+      "- Event End Time*: date-time picker. Error if empty: 'Please select end time'.",
+      "- About Event: rich text editor (WYSIWYG) with Bold, Italic, Underline, Strikethrough, lists, tables, etc. Optional.",
+      "- Location — Street Address*, City*, State/Province/Region (optional), Postal Code (optional), Country* (searchable dropdown with flags, default: Singapore).",
+
+      "Step 2 — Add ticket. Each ticket appears as an accordion (Ticket 1, Ticket 2, ...). Use '+ Add ticket' to add more. Fields per ticket:",
+      "- Ticket name*: text, up to 200 characters.",
+      "- Sale Start Time: date-time picker. Not required if the toggle 'Start sale of tickets as soon as Event page goes live' is ON.",
+      "- Sale End Time*: date-time picker.",
+      "- Toggle: 'Start sale of tickets as soon as Event page goes live' (default OFF). When ON, Sale Start Time is disabled/not required.",
+      "- Quantity*: number input.",
+      "- Price* (only when Paid Event): number input with currency prefix (e.g., S$).",
+      "- Toggle: 'Show remaining ticket quantity' (default OFF).",
+      "- Description*: textarea, up to 120 characters.",
+
+      "Step 3 — Registration Form (optional; can be skipped). Collect additional info during checkout.",
+      "- Collection mode (radio): 'Ticket Buyer' (Recommended, faster checkout) or 'Each Attendee' (per-ticket info).",
+      "- Each question has: Question Prompt* (text, up to 200 characters; error if empty: 'Please enter a question prompt.'), optional '+ Add description', Answer Type dropdown (default: Short Answer (max 200 chars); options: Name, Email, Short Answer, Long Answer (max 1000 chars), Single Choice, Checkboxes, Select From Dropdown), Required toggle (default OFF), and a 3-dot menu for actions.",
+      "- Use the 'Add Question' button to add more questions.",
+
+      "Step 4 — Review and Submit for Approval. Shows banner, event type, ticketing type, start/end time, title, about event, location with Google Maps, tickets, and registration form. Click Submit (blue button with upload icon) to send for admin review. Note: 'You can make additional edits after your event page is published.'",
+
+      "Required fields summary:",
+      "- Step 1: Banner Photo, Event Type, Ticketing Type, Currency (if Paid), Timezone, Event Start Time, Event End Time, Street Address, City, Country.",
+      "- Step 2: Ticket name, Sale End Time, Quantity, Price (if Paid), Description.",
+      "- Step 3: Question Prompt (for any question created).",
+      "- Step 4: No input fields — review only."
+    ],
+    icon: "🎟️"
+  },
+  {
     id: "attendance-tracking",
     title: "Managing Roles",
     description: "How to manage users and ownership of your organization.",

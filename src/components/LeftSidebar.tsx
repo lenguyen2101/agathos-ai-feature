@@ -1,19 +1,20 @@
 "use client";
 
 import React from "react";
-import { 
-  Sparkles, 
-  BookOpen, 
-  HelpCircle, 
-  MessageSquare, 
-  ShieldCheck, 
-  CreditCard, 
+import {
+  Sparkles,
+  BookOpen,
+  HelpCircle,
+  MessageSquare,
+  ShieldCheck,
+  CreditCard,
   FileText,
   User,
   LogOut,
   ChevronRight,
   DollarSign,
-  Users
+  Users,
+  Calendar
 } from "lucide-react";
 
 export default function LeftSidebar({ 
@@ -30,6 +31,7 @@ export default function LeftSidebar({
   const commonQuestions = [
     { text: "What is the TrustMark?", icon: <ShieldCheck className="w-4 h-4" /> },
     { text: "How do I start a project?", icon: <Sparkles className="w-4 h-4" /> },
+    { text: "How to create an event?", icon: <Calendar className="w-4 h-4" /> },
     { text: "Required documents?", icon: <FileText className="w-4 h-4" /> },
     { text: "Love Gift Model", icon: <CreditCard className="w-4 h-4" /> },
     { text: "What are the platform fees?", icon: <DollarSign className="w-4 h-4" /> },
