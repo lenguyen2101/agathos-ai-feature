@@ -43,8 +43,14 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Chat API error:", error);
     const errorMessage = error instanceof Error ? error.message : "An unexpected error occurred.";
-    return new Response(JSON.stringify({ error: errorMessage }), {
-      status: 500,
-    });
+    const isRateLimited = /\b429\b|resource exhausted|rate.?limit/i.test(errorMessage);
+    return new Response(
+      JSON.stringify({
+        error: isRateLimited
+          ? "The AI model is temporarily overloaded. Please try again in a minute."
+          : errorMessage
+      }),
+      { status: isRateLimited ? 429 : 500 }
+    );
   }
 }

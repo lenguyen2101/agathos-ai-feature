@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Send, Bot, User, RefreshCw, X, Loader2, Sparkles, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
-import { postJson } from "@/lib/api-client";
+import { postJson, ApiError } from "@/lib/api-client";
 
 export default function RightSidebar({ 
   pendingQuery, 
@@ -57,11 +57,10 @@ export default function RightSidebar({
       }
     } catch (error) {
       console.error("Chat error:", error);
-      const detail = error instanceof Error ? error.message : String(error);
-      setMessages(prev => [...prev, {
-        role: 'ai',
-        content: `Sorry, I'm having trouble connecting right now.\n\n**Debug:** \`${detail}\``
-      }]);
+      const friendly = error instanceof ApiError && error.status === 429
+        ? "⏳ Our AI is temporarily overloaded. Please try again in a minute."
+        : "Sorry, I'm having trouble connecting right now.";
+      setMessages(prev => [...prev, { role: 'ai', content: friendly }]);
     } finally {
       setIsLoading(false);
     }
