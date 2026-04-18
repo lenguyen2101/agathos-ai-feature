@@ -91,7 +91,14 @@ export default function Home() {
       {/* CENTER PANEL */}
       <section className="center-panel-container pt-20 lg:pt-0">
         <div className="container-soft py-12">
-            {activeTab === 'docs' && <DocumentViewer />}
+            {activeTab === 'docs' && (
+              <DocumentViewer
+                onAskAI={(query) => {
+                  setPendingChatQuery(query);
+                  setIsChatOpen(true);
+                }}
+              />
+            )}
             {activeTab === 'onboarding' && <OnboardingFlow onComplete={handleOnboardingComplete} />}
         </div>
       </section>
