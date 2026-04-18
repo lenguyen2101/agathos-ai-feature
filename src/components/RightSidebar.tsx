@@ -57,7 +57,11 @@ export default function RightSidebar({
       }
     } catch (error) {
       console.error("Chat error:", error);
-      setMessages(prev => [...prev, { role: 'ai', content: "Sorry, I'm having trouble connecting right now." }]);
+      const detail = error instanceof Error ? error.message : String(error);
+      setMessages(prev => [...prev, {
+        role: 'ai',
+        content: `Sorry, I'm having trouble connecting right now.\n\n**Debug:** \`${detail}\``
+      }]);
     } finally {
       setIsLoading(false);
     }
